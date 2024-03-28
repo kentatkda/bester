@@ -3,6 +3,7 @@ import React from 'react'
 
 function ShowLogo() {
   return (
+    // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
     <div className='justify-content-space-around align-items-center' 
     style={{
         position: 'fixed',
@@ -14,6 +15,7 @@ function ShowLogo() {
         top:'calc(10% - 50px/2)'
 
     }}>
+      // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
       <h2 className='text-warning' >Welcome to BESTER. </h2>
       {/* <motion.div
         className="figure2"

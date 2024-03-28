@@ -1,13 +1,23 @@
 import React from 'react'
+// @ts-expect-error TS(6142): Module './Contacts.js' was resolved to 'C:/Users/M... Remove this comment to see the full error message
 import { ContactsDesc } from './Contacts.js'
+// @ts-expect-error TS(6142): Module './Header' was resolved to 'C:/Users/MEIP-u... Remove this comment to see the full error message
 import Header from './Header'
+// @ts-expect-error TS(6142): Module './Footer' was resolved to 'C:/Users/MEIP-u... Remove this comment to see the full error message
 import Footer from './Footer'
+// @ts-expect-error TS(2307): Cannot find module './images/shinkan/ShinkanTennis... Remove this comment to see the full error message
 import TennisImg from './images/shinkan/ShinkanTennisImg.jpg'
+// @ts-expect-error TS(2307): Cannot find module './images/shinkan/ShinkanEventI... Remove this comment to see the full error message
 import MealImg from './images/shinkan/ShinkanEventImg.png'
+// @ts-expect-error TS(2307): Cannot find module './images/shinkan/ShinkanGassyu... Remove this comment to see the full error message
 import GassyukuImg from './images/shinkan/ShinkanGassyukuImg.JPG'
+// @ts-expect-error TS(2307): Cannot find module './images/shinkan/ShinkanIchine... Remove this comment to see the full error message
 import IchinenImg from './images/shinkan/ShinkanIchinenImg.jpg'
+// @ts-expect-error TS(6142): Module './JoinUs.js' was resolved to 'C:/Users/MEI... Remove this comment to see the full error message
 import { CalendarSlides } from './JoinUs.js'
+// @ts-expect-error TS(6142): Module './Social.js' was resolved to 'C:/Users/MEI... Remove this comment to see the full error message
 import Social from './Social.js'
+// @ts-expect-error TS(6142): Module './ShinkanJoinButton.js' was resolved to 'C... Remove this comment to see the full error message
 import ShinkanJoinButton from './ShinkanJoinButton.js'
 // import { Button  } from 'react-bootstrap'
 
@@ -45,10 +55,12 @@ import ShinkanJoinButton from './ShinkanJoinButton.js'
 
 const WhatWeDoHeader = () => {
   return (
+      // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
       <h1 className='mb-3 d-flex text-uppercase fw-bold text-align-center justify-content-center' 
       style={{
           margin:'auto'
       }}>
+          // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
           <p className='text-warning'> WHAT </p>
           &nbsp; WE Do
       </h1>
@@ -75,13 +87,17 @@ function ShinkanDescription () {
     },]
 
     const ShinkanCards = data.map((item) =>
+    // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
     <div className='container justify-content-space-between text-align-center shadow'
     style={{
       width: '80%',
       marginBottom: '10vh'
     }}>
+        // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
         <div className='row'>
+            // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
             <div className='col-lg-6 d-flex justify-content-center'>
+                // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
                 <img src={item.src} className='img-fluid border border-3 border-warning' alt="" style={{
                     height:'80%',
                     margin:'auto',
@@ -89,8 +105,11 @@ function ShinkanDescription () {
 
                 }}/>
             </div>
+            // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
             <div className='col-lg-6 d-flex flex-column align-items-center justify-content-center mb-5 mb-lg-2'>
+                // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
                 <b style={{marginTop: '30px'}}>{item.title}</b>
+                // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
                 <div className='py-2 px-1' style={{
                   textAlign: 'center',
                   width: '90%'
@@ -102,12 +121,16 @@ function ShinkanDescription () {
     </div>
     )
   return (
+    // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
     <div>
+        // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
         <div className='container py-5 justify-content-center'
         style={{
             marginTop: '150px'
         }}>
+          // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
           <WhatWeDoHeader/>
+          // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
           <div className='ShinkanCards'
           style={{
               marginTop: '100px'
@@ -121,27 +144,34 @@ function ShinkanDescription () {
 
 function ShinkanHeader () {
   return (
+    // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
     <div className='container py-2 text-center' style={{
       width: '80%',
       justifyContent: 'space-around',
       margin: 'auto',
       marginTop: '20vh',
     }}>
+      // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
       <div className='row'>
+        // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
         <div className="col-lg-4 d-flex flex-column align-items-center justify-content-center text-center"
         style={{
             margin: 'auto',
             width: '450px'
         }}>
+          // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
           <CalendarSlides/>
         </div>
+        // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
         <div className="col-lg-4 d-flex flex-column justify-content-center" style={{
           alignContent: 'left',
           textAlign: 'center',
           justifyContent: 'center',
           marginRight: 'auto',
         }}>
+            // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
             <h2 className="fs-1 mb-3 text-uppercase fw-bold text-center justify-content-center"style={{marginTop: '50px'}}> Shinkan  <p className='text-warning'>Info</p> </h2>
+            // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
             <p className="mb-3" style={{
               // maxWidth: '90%',
               textAlign: 'center',
@@ -153,6 +183,7 @@ function ShinkanHeader () {
               あなたもきっとBESTERを好きになるはず..！
               連絡は下のリンクまたは、X, Instagram のDMからお待ちしています！
             </p>
+            // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
             <ShinkanJoinButton/>
         </div>
       </div>
@@ -208,12 +239,19 @@ function ShinkanHeader () {
 
 function Shinkan() {
   return (
+    // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
     <div >
+      // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
       <Header/>
+      // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
       <Social/>
+      // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
       <ShinkanHeader/>
+      // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
       <ShinkanDescription/>
+      // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
       <ContactsDesc/>
+      // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
       <Footer/>
     </div>
   )
