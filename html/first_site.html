@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewpoint" content="width=device-width, initial-scale=1">
+
+<title>私の最初のサイトだぞ</title>
+
+</head>
+
+<body>
+    <h1>朝食と栄養</h1>
+    <p>普段の朝食で食べる物の栄養について。</p>
+    <hr>
+    <h2>パンについて</h2>
+    <b>栄養</b>
+    <p>まずはパンです。今回は食パンについて調べてみました。</p>
+    <h3>食パンの栄養</h3>
+    <p>次にご飯です。今回は白米と玄米について調べてみました。</p>
+    <h3>白米の栄養</h3>
+    <p>白米の栄養価は....</p>
+    <h3>玄米の栄養</h3>
+    <p>玄米の栄養価は....</p>
+    <h3 id="MoveInPage">スクロールリンク</h3>
+
+    #画像の挿入
+    <img src="bester.jpg" alt="こんなんでいいわけ？" width=""100%>
+
+    #強調
+    <mark>3月</mark>
+    <p>なにも付けていない食パンの栄養価は....</p>
+    <h2>ご飯について</h2>
+
+    #URL貼り付け<br>
+    <a href="https://www.google.co.jp"target="__blank">Google</a>
+
+    <br>
+
+    <a href="#MoveInPage">スクロール移動</a>
+<br>
+
+    #箇条書き
+    <ul>
+        <li>うれしい</li>
+        <li>たのしい</li>
+        <li>すばらしい</li>
+    </ul>
+<br>
+    <ol>
+        <li>Twitterを開く</li>
+        <li>ヒツジのアカウントを表示</li>
+        <li>フォローする</li>
+    </ol>
+
+    <br>
+
+#表の作成
+
+<table border=1>
+    <tr>
+        <th>名前</th>
+        <th>年齢</th>
+        <th>利き手</th>
+        <th>体重</th>
+        </tr>
+        <tr>
+        <td>ヒツジ</td>
+        <td>6歳</td>
+        <td>右</td>
+        <td>140kg</td>
+        </tr>
+        <tr>
+        <td>ヒツジ(兄)</td>
+        <td>8歳</td>
+        <td>左</td>
+        <td>167kg</td>
+        </tr>
+        <tr>
+        <td>ヒツジ(姉)</td>
+        <td>10歳</td>
+        <td>右</td>
+        <td>非公開</td>
+        </tr>
+</table>
+
+
+<div>
+    <h2>羊の遊び</h2>
+    <p>
+        羊はいつも草原でごろごろして遊びます。
+    </p>
+
+<br>
+<p>
+ひつじは<span>３匹</span>兄弟です。
+</p>
+</div>
+
+<br>
+
+#form  
+<form action="recieve.php"method="post">
+#名前フォーム
+<br>
+
+<input type="text" name="myname" size="20" placeholder="お名前は？">
+
+<br>
+#textarea
+<br>
+
+<textarea name="review"cols="40" rows="10" placeholder="感想を入力"></textarea>
+<br>
+
+#number
+<br>
+
+<input type="number" name="number" placeholder="数字を入力" min="-20" max="3" step="5">
+
+<br>
+
+#password
+<br>
+
+<input type="password" name="password" placeholder="パスワード">
+
+<br>
+
+#checkbox
+<br>
+
+
+<input type="checkbox" name="food" value="カレー" checked>カレー<br>
+<input type="checkbox" name="food" value="グラタン">グラタン<br>
+<input type="checkbox" name="food" value="うどん">うどん<br>
+
+
+#month
+<select name="birthday">
+    <option value="" disabled>--</option>
+    <option value="1">1月</option>
+    <option value="2">2月</option>
+    <option value="3" selected>3月</option>
+    <option value="4">4月</option>
+    <option value="5">5月</option>
+    <option value="6">6月</option>
+    <option value="7">7月</option>
+    <option value="8">8月</option>
+    <option value="9">9月</option>
+    <option value="10">10月</option>
+    <option value="11">11月</option>
+    <option value="12">12月</option>
+    </select>
+
+<br>
+#file参照
+<input type="file" name="file">
+
+<br>
+#リセット
+<br>
+
+
+
+</form>
+<br>
+
+
+<!-- <form action="recieve.php" method="post">
+    <input type="text" name="myname" placeholder="あなたの名前は？">
+    <input type="number" name="number" placeholder="数字を入力">
+    <input type="submit" value="送信">
+</form> -->
+
+
+<br>
+#うめこみ
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3237.586483146487!2d139.73644279999996!3d35.76096729999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60189263e4ac0001%3A0x4116aae5e59ee22e!2z44Kw44Op44Oz44O744Ko44K544Od44Ov44O844Or!5e0!3m2!1sja!2sjp!4v1707048940058!5m2!1sja!2sjp" width="90%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+<br>
+<iframe width="90%" height="315" src="https://www.youtube.com/embed/tzufy-B6cLw?si=g3Y8gQ2vS0yAIymc&amp;start=8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<br>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Sp3D9cyPeY0?si=7BPZVvGukTnwABgo&amp;start=8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</body>
+
+</html>
