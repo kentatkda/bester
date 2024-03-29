@@ -42,15 +42,12 @@ import hanabi3 from './images/gallery/hanabi3.jpg'
 import pink from './images/gallery/pink.jpg'
 // @ts-expect-error TS(2307): Cannot find module './images/gallery/hanabi4.jpg' ... Remove this comment to see the full error message
 import hanabi4 from './images/gallery/hanabi4.jpg'
-// @ts-expect-error TS(6142): Module './Header' was resolved to 'C:/Users/MEIP-u... Remove this comment to see the full error message
-import Header from './Header'
+
 // @ts-expect-error TS(2307): Cannot find module './images/gallery/hanabi1.jpg' ... Remove this comment to see the full error message
 import hanabi1 from './images/gallery/hanabi1.jpg'
 // @ts-expect-error TS(2307): Cannot find module './images/gallery/sleep.jpg' or... Remove this comment to see the full error message
 import sleep from './images/gallery/sleep.jpg'
-// import naked from './images/gallery/naked.jpg'
-// @ts-expect-error TS(6142): Module './Social' was resolved to 'C:/Users/MEIP-u... Remove this comment to see the full error message
-import Social from './Social'
+
 // @ts-expect-error TS(2307): Cannot find module './images/gallery/nagomi.jpg' o... Remove this comment to see the full error message
 import nagomi from './images/gallery/nagomi.jpg'
 // @ts-expect-error TS(2307): Cannot find module './images/gallery/yui.jpg' or i... Remove this comment to see the full error message
@@ -62,18 +59,15 @@ import kotomi from './images/gallery/kotomi.jpg'
 
 
 // import { container } from 'react-bootstrap'
-// @ts-expect-error TS(6142): Module './Footer' was resolved to 'C:/Users/MEIP-u... Remove this comment to see the full error message
-import Footer from './Footer'
+
 
 const GalleryDetailsHeader = () => {
     return (
-        // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
         <h1 className='mb-3 d-flex text-uppercase fw-bold text-align-center justify-content-center' 
         style={{
             margin:'auto'
         }}>
             BESTER &nbsp;
-            // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
             <p className='text-warning'> Gallery</p>
         </h1>
     )
@@ -81,20 +75,12 @@ const GalleryDetailsHeader = () => {
 
 export default function GalleryDetails() {
 return (
-    // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
     <div>
-        // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
-        <Header/>
-        // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
-        <Social/>
-    // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
     <div className="container py-5"
     style={{
         marginTop: '150px',
     }}>
-        // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
         <GalleryDetailsHeader/>
-        // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
         <div className="row"
         style={{width: '80%',
                 margin: 'auto',
@@ -102,154 +88,96 @@ return (
                 alignContent: 'center',
                 marginTop: '100px',
                 }}>
-            // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
             <div className="col-md-4 px-2">
-                // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
                 <div className="my-3 border border-4 border-dark" style={{overflow:'hidden'}}>
-                    // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
                     <img src={tennis6} className="img-fluid" alt="" style={{objectFit: 'cover'}}/>
                 </div>
-                // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
                 <div className="my-3 border border-4 border-dark" style={{overflow:'hidden'}}>
-                    // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
                     <img src={river} className="img-fluid" alt="" style={{objectFit: 'cover'}}/>
                 </div>
-                // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
                 <div className="my-3 border border-4 border-dark" style={{overflow:'hidden'}}>
-                    // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
                     <img src={ hanabi3 } className="img-fluid" alt="" style={{objectFit: 'cover'}}/>
                 </div>
-                // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
                 <div className="my-3 border border-4 border-dark" style={{overflow:'hidden'}}>
-                    // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
                     <img src={ iwai } className="img-fluid" alt="" style={{objectFit: 'cover'}}/>
                 </div>
-                // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
                 <div className="my-3 border border-4 border-dark" style={{overflow:'hidden'}}>
-                    // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
                     <img src={ BBQ2 } className="img-fluid" alt="" style={{objectFit: 'cover'}}/>
                 </div>
-                // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
                 <div className="my-3 border border-4 border-dark" style={{overflow:'hidden'}}>
-                    // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
                     <img src={ fuji } className="img-fluid" alt="" style={{objectFit: 'cover'}}/>
                 </div>
-                // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
                 <div className="my-3 border border-4 border-dark" style={{overflow:'hidden'}}>
-                    // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
                     <img src={ hanabi1 } className="img-fluid" alt="" style={{objectFit: 'cover'}}/>
                 </div>
-                // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
                 <div className="my-3 border border-4 border-dark" style={{overflow:'hidden'}}>
-                    // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
                     <img src={band} className="img-fluid" alt="" style={{objectFit: 'cover'}}/>
                 </div>
-                // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
                 <div className="my-3 border border-4 border-dark" style={{overflow:'hidden'}}>
-                    // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
                     <img src={ pink } className="img-fluid" alt="" style={{objectFit: 'cover'}}/>
                 </div>
             </div>
-            // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
             <div className="col-md-4 px-2">
-                // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
                 <div className="my-3 border border-4 border-dark" style={{overflow:'hidden'}}>
-                    // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
                     <img src={ backimg } className="img-fluid" alt="" style={{objectFit: 'cover'}}/>
                 </div>
-                // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
                 <div className="my-3 border border-4 border-dark" style={{overflow:'hidden'}}>
-                    // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
                     <img src={ BBQ } className="img-fluid" alt="" style={{objectFit: 'cover'}}/>
                 </div>
-                // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
                 <div className="my-3 border border-4 border-dark" style={{overflow:'hidden'}}>
-                    // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
                     <img src={ oikon } className="img-fluid" alt="" style={{objectFit: 'cover'}}/>
                 </div>
-                // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
                 <div className="my-3 border border-4 border-dark" style={{overflow:'hidden'}}>
-                    // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
                     <img src={ tennis2 } className="img-fluid" alt="" style={{objectFit: 'cover'}}/>
                 </div>
-                // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
                 <div className="my-3 border border-4 border-dark" style={{overflow:'hidden'}}>
-                    // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
                     <img src={ hanabi } className="img-fluid" alt="" style={{objectFit: 'cover'}}/>
                 </div>
-                // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
                 <div className="my-3 border border-4 border-dark" style={{overflow:'hidden'}}>
-                    // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
                     <img src={ disney } className="img-fluid" alt="" style={{objectFit: 'cover'}}/>
                 </div>
-                // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
                 <div className="my-3 border border-4 border-dark" style={{overflow:'hidden'}}>
-                    // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
                     <img src={ tennis5 } className="img-fluid" alt="" style={{objectFit: 'cover'}}/>
                 </div>
-                // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
                 <div className="my-3 border border-4 border-dark" style={{overflow:'hidden'}}>
-                    // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
                     <img src={ kotomi } className="img-fluid" alt="" style={{objectFit: 'cover'}}/>
                 </div>
-                // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
                 <div className="my-3 border border-4 border-dark" style={{overflow:'hidden'}}>
-                    // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
                     <img src={ tennis5 } className="img-fluid" alt="" style={{objectFit: 'cover'}}/>
                 </div>
             </div>
-            // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
             <div className="col-md-4 px-2">
-                // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
                 <div className="my-3 border border-4 border-dark" style={{overflow:'hidden'}}>
-                    // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
                     <img src={female} className="img-fluid" alt="" style={{objectFit: 'cover'}}/>
                 </div>
-                // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
                 <div className="my-3 border border-4 border-dark" style={{overflow:'hidden'}}>
-                    // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
                     <img src={ snow } className="img-fluid" alt="" style={{objectFit: 'cover'}}/>
                 </div>
-                // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
                 <div className="my-3 border border-4 border-dark" style={{overflow:'hidden'}}>
-                    // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
                     <img src={ hanabi4 } className="img-fluid" alt="" style={{objectFit: 'cover'}}/>
                 </div>
-                // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
                 <div className="my-3 border border-4 border-dark" style={{overflow:'hidden'}}>
-                    // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
                     <img src={ yui } className="img-fluid" alt="" style={{objectFit: 'cover'}}/>
                 </div>
-                // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
                 <div className="my-3 border border-4 border-dark" style={{overflow:'hidden'}}>
-                    // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
                     <img src={ kotose } className="img-fluid" alt="" style={{objectFit: 'cover'}}/>
                 </div>
-                // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
                 <div className="my-3 border border-4 border-dark" style={{overflow:'hidden'}}>
-                    // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
                     <img src={ tennis4 } className="img-fluid" alt="" style={{objectFit: 'cover'}}/>
                 </div>
-                // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
                 <div className="my-3 border border-4 border-dark" style={{overflow:'hidden'}}>
-                    // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
                     <img src={ sleep } className="img-fluid" alt="" style={{objectFit: 'cover'}}/>
                 </div>
-                // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
                 <div className="my-3 border border-4 border-dark" style={{overflow:'hidden'}}>
-                    // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
                     <img src={ nagomi } className="img-fluid" alt="" style={{objectFit: 'cover'}}/>
                 </div>
-                // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
                 <div className="my-3 border border-4 border-dark" style={{overflow:'hidden'}}>
-                    // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
                     <img src={ tennis3 } className="img-fluid" alt="" style={{objectFit: 'cover'}}/>
                 </div>
             </div>
         </div>
         </div>
-        // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
-        <Footer style={{width: '100%'}}/>
+
     </div>
 )
 }

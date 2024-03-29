@@ -23,22 +23,16 @@ export default function CharmPoints() {
   ]
 
   const PointCards = data.map((item) =>
-  // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
   <div className="col-md-3 col-sm-6 col-xs-6 col-xs-3 px-2 ">
-      // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
       <div className="my-3" 
       style={{
         overflow:'hidden',
       }}>
-          // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
           <img src={item.src} className="img-fluid" alt="" style={{objectFit: 'cover'}}/>
       </div>
-      // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
       <div className="my-3 text-dark" >
-        // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
         <b> {item.title} </b>
       </div>
-      // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
       <div className='my-3 text-dark'>
         {item.desc}
       </div>
@@ -46,9 +40,9 @@ export default function CharmPoints() {
   )
 
   return (
-    // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
     <div className='container'
     style={{
+      width: '90%',
       position: 'relative',
       zIndex: '-100',
       width: '90%',
@@ -56,13 +50,12 @@ export default function CharmPoints() {
       justifyContent: 'center',
       alignContent: 'center',
       margin:'auto',
-      marginTop: '20vh'
+      marginTop: '20vh',
+      marginBottom: '25vh'
     }}>
-      // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
       <h1 className='fw-bold text-dark my-5'>
         FEATURES
       </h1>
-      // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
       <div className='row'
       style={{
         justifyContent: 'space-between',

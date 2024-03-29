@@ -9,31 +9,19 @@ import HanabiImg from './images/events/hanabi.jpg'
 
 function ImagesSlide() {
   return (
-    // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
     <Carousel className='container'>
-      // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
       <Carousel.Item>
-        // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
         <img className='img-fluid border border-4 border-dark' src={BBQImg} alt="" style={{maxHeight: '300px', objectFit: 'cover'}}/>
-        {/* <Carousel.Caption>
-          <h3> BBQ </h3>
-        </Carousel.Caption> */}
+        
       </Carousel.Item>
-      // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
       <Carousel.Item>
-        // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
         <img className='img-fluid border border-4 border-dark' src={HanabiImg} alt="" style={{maxHeight: '300px', objectFit: 'cover'}}/>
         {/* <Carousel.Caption>
           <h3> 花火大会 </h3>
         </Carousel.Caption> */}
       </Carousel.Item>
-      // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
       <Carousel.Item>
-        // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
         <img className='img-fluid border border-4 border-dark' src={ChristmasImg} alt="" style={{maxHeight: '300px', objectFit: 'cover'}} />
-        {/* <Carousel.Caption>
-          <h3> クリスマスパーティ </h3>
-        </Carousel.Caption> */}
       </Carousel.Item>
     </Carousel>
 

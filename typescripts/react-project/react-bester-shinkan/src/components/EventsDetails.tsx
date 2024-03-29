@@ -1,6 +1,5 @@
 import React from 'react'
-// @ts-expect-error TS(6142): Module './Header' was resolved to 'C:/Users/MEIP-u... Remove this comment to see the full error message
-import Header from './Header';
+
 // @ts-expect-error TS(2307): Cannot find module './images/events/christmasparty... Remove this comment to see the full error message
 import  ChristmasImg  from './images/events/christmasparty.jpg'
 // @ts-expect-error TS(2307): Cannot find module './images/events/BBQ.jpg' or it... Remove this comment to see the full error message
@@ -23,21 +22,14 @@ import HanabiImg from './images/events/hanabi.jpg'
 import HarugaImg from './images/events/haruga.jpg'
 // @ts-expect-error TS(2307): Cannot find module './images/events/gogatsu.jpg' o... Remove this comment to see the full error message
 import GogatsuImg from './images/events/gogatsu.jpg'
-// @ts-expect-error TS(6142): Module './Social' was resolved to 'C:/Users/MEIP-u... Remove this comment to see the full error message
-import Social from './Social';
-
-// @ts-expect-error TS(6142): Module './Footer' was resolved to 'C:/Users/MEIP-u... Remove this comment to see the full error message
-import Footer from './Footer';
 
 const EventDetailsHeader = () => {
     return (
-        // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
         <h1 className='mb-3 d-flex text-uppercase fw-bold text-align-center justify-content-center' 
         style={{
             margin:'auto'
         }}>
             BESTER &nbsp;
-            // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
             <p className='text-warning'> EVENTS</p>
         </h1>
     )
@@ -94,17 +86,13 @@ function EventsDetails() {
 
     
     const EventCards = data.map((item) =>
-    // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
     <div className='container justify-content-space-between text-align-center shadow'
     style={{
       width: '80%',
       marginBottom: '10vh'
     }}>
-        // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
         <div className='row'>
-            // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
             <div className='col-lg-6 d-flex justify-content-center'>
-                // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
                 <img src={item.src} className='img-fluid border border-4 border-warning' alt="" style={{
                     height:'80%',
                     margin:'auto',
@@ -112,11 +100,8 @@ function EventsDetails() {
 
                 }}/>
             </div>
-            // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
             <div className='col-lg-6 d-flex flex-column align-items-center justify-content-center mb-5 mb-lg-2'>
-                // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
                 <b>{item.title}</b>
-                // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
                 <div className='py-2 px-1'>
                   {item.desc}
                 </div>
@@ -125,20 +110,12 @@ function EventsDetails() {
     </div>
         )
     return (
-        // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
         <div>
-            // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
-            <Header/>
-            // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
-            <Social/>
-            // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
             <div className='container py-5 justify-content-center'
             style={{
                 marginTop: '150px'
             }}>
-                // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
                 <EventDetailsHeader/>
-                // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
                 <div className='eventCards'
                 style={{
                     marginTop: '100px'
@@ -146,8 +123,6 @@ function EventsDetails() {
                     {EventCards}
                 </div>
             </div>
-            // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
-            <Footer/>
         </div>
     )
 }
