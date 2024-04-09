@@ -1,31 +1,16 @@
 import React from 'react'
 // @ts-expect-error TS(2307): Cannot find module './images/home/AboutBester.jpg'... Remove this comment to see the full error message
 import TennisImg from './images/home/AboutBester.jpg'
-import Button from 'react-bootstrap/Button';
-import { Link } from 'react-router-dom';
+import ModalComponent from './ModalComponent.tsx'
 
 
 
 function AboutBester() {
-  const ButtonLink = () => {
-
-    return (
-    <div
-    style={{
-      textAlign: 'center',
-      marginTop: '50px',
-    }}>
-        <Link to="">
-            <Button variant="warning">Join Us →</Button>
-        </Link>
-    </div>)
-  };
 
   return (
-    <div className='container text-light py-5 text-align align-items-center '
+    <div className='container text-light py-5 text-center '
     style={{
       position: 'relative',
-      zIndex: '-100',
       width: '80%',
       textAlign: 'center',
       justifyContent: 'center',
@@ -50,13 +35,13 @@ function AboutBester() {
           alignContent: 'center',
           margin: 'auto'
         }}>
-          <div className='col-md-6 d-flex justify-content-center'>
+          <div className='col-lg-6 d-flex justify-content-center'>
               <img src={TennisImg} className='img-fluid border border-4 border-dark' alt="" 
               style={{
                 maxWidth: '300px'
               }}/>
           </div>
-          <div className='col-md-5 d-flex flex-column align-items-center justify-content-center mb-5 mb-lg-2'
+          <div className='col-lg-5 my-3 d-flex flex-column align-items-center justify-content-center mb-2 '
           style={{
             margin: 'auto',
             maxWidth: '90%',
@@ -69,7 +54,11 @@ function AboutBester() {
                 夏になって<b>「友達少ない...」</b>と気づいて後悔したって後の祭り。
                 さあ、後悔する前に新歓に参加し私たちと大学生活という<b>最後の青春時代</b>を全力で謳歌しましょう。
               </div>
-              <ButtonLink/>
+              <div className='btn' style={{
+                marginTop: '20px'
+              }}>
+                <ModalComponent/>
+              </div>
           </div>
         </div>
       </div>

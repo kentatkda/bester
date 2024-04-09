@@ -35,7 +35,10 @@ function ShinkanDescription () {
     <div className='container justify-content-space-between text-align-center shadow'
     style={{
       width: '80%',
-      marginBottom: '10vh'
+      marginBottom: '10vh',
+      borderRadius: '10px', // 任意の角の半径を指定します
+      backgroundColor: '#f0f0f0', // 任意の背景色を指定します
+      padding: '20px',
     }}>
         <div className='row'>
             <div className='col-lg-6 d-flex justify-content-center'>

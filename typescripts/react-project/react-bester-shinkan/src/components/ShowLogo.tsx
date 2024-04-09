@@ -1,9 +1,8 @@
 import React from 'react'
 // import { motion } from "framer-motion";
-
+// import BesterLogo from './images/symbol/bester_logo.png'
 function ShowLogo() {
   return (
-    // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
     <div className='justify-content-space-around align-items-center' 
     style={{
         position: 'fixed',
@@ -15,15 +14,22 @@ function ShowLogo() {
         top:'calc(10% - 50px/2)'
 
     }}>
-      // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
-      <h2 className='text-warning' >Welcome to BESTER. </h2>
+      <div className='logo-animation'>
       {/* <motion.div
         className="figure2"
-        initial={{ opacity: 0, x: -100 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 2 }}>
-        4
+        initial={{ opacity: 1, x: 0 }}
+        animate={{ opacity: 0, x: 0 }}
+        transition={{ duration: 6 }}>
+        <img src={BesterLogo} alt=""/>
       </motion.div> */}
+        <div className='letter text-warning fw-bold'>B</div>
+        <div className='letter text-warning fw-bold'>E</div>
+        <div className='letter text-warning fw-bold'>S</div>
+        <div className='letter text-warning fw-bold'>T</div>
+        <div className='letter text-warning fw-bold'>E</div>
+        <div className='letter text-warning fw-bold'>R</div>
+      </div>
+
     </div>
   )
 }

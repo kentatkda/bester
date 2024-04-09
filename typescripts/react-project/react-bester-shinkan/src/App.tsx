@@ -12,11 +12,14 @@ import Gallery from './pages/Gallery.tsx';
 import './style.css';
 import { AnimatePresence } from 'framer-motion';
 
+
 const App = () => {
   const location = useLocation()
+
+
   return (
-    <AnimatePresence>
-      <div className="App">
+    <div className="App">
+      <AnimatePresence mode="wait">
         <Routes location={ location } key={location.pathname}>
           <Route path="/" element={ <Home /> }/>
           <Route path="/events" element={ <Events /> } />
@@ -25,8 +28,8 @@ const App = () => {
           <Route path="/gallery" element={ <Gallery /> } />
           <Route path="/shinkan" element={ <Shinkan /> } />
         </Routes>
-      </div>
-    </AnimatePresence>
+      </AnimatePresence>
+    </div>
   );
 }
 

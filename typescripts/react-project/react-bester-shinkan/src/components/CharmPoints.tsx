@@ -6,6 +6,8 @@ import SexImg from './images/home/danjyo.png'
 // @ts-expect-error TS(2307): Cannot find module './images/home/tenbin.png' or i... Remove this comment to see the full error message
 import TenbinImg from './images/home/tenbin.png'
 
+
+
 export default function CharmPoints() {
   const data = [
     {title: "男女比1:1",
@@ -23,17 +25,24 @@ export default function CharmPoints() {
   ]
 
   const PointCards = data.map((item) =>
-  <div className="col-md-3 col-sm-6 col-xs-6 col-xs-3 px-2 ">
+  <div className="col-lg-4 col-sm-6 col-xs-6 px-2 ">
       <div className="my-3" 
       style={{
         overflow:'hidden',
       }}>
-          <img src={item.src} className="img-fluid" alt="" style={{objectFit: 'cover'}}/>
+          <img src={item.src} className="img-fluid" alt="" style={{
+            objectFit: 'cover',
+            maxWidth: '200px'}}/>
       </div>
       <div className="my-3 text-dark" >
         <b> {item.title} </b>
       </div>
-      <div className='my-3 text-dark'>
+      <div className='my-3 text-dark' style={{
+        maxWidth: '250px',
+        justifyContent: 'center',
+        margin: 'auto',
+        textAlign: 'center'
+      }}>
         {item.desc}
       </div>
   </div>
@@ -42,10 +51,9 @@ export default function CharmPoints() {
   return (
     <div className='container'
     style={{
-      width: '90%',
+      width: '80%',
       position: 'relative',
       zIndex: '-100',
-      width: '90%',
       textAlign: 'center',
       justifyContent: 'center',
       alignContent: 'center',

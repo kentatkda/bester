@@ -28,15 +28,17 @@ function Tennis() {
         >
             <div className='row' 
             style={{
-              // width: '80%',
+              width: '90%',
               justifyContent: 'center',
-              alignContent: 'space-between',
+              alignContent: 'space-around',
               margin: 'auto',
               marginBottom: '15vh'
             }}>
-                <div className='col-md-5 d-flex flex-column align-items-center justify-content-center mb-5 mb-lg-2'
+                <div className='col-lg-6 d-flex flex-column align-items-center justify-content-center mb-5 '
                 style={{
                   marginTop: '20px',
+                  maxWidth: '450px',
+                  textAlign: 'center'
                 }}>
                     <div>
                       練習頻度は週2回程度で、
@@ -45,7 +47,7 @@ function Tennis() {
                     </div>
                     <ButtonComponent/>
                 </div>
-                <div className='col-md-5 d-flex justify-content-center'>
+                <div className='col-lg-6 d-flex justify-content-center'>
                     <img src={TennisIrast} className='img-fluid border border-4 border-white' alt="" style={{maxWidth: '400px', overflow:'hidden',}}/>
                 </div>
             </div>

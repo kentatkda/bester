@@ -1,5 +1,6 @@
 import React from 'react'
-
+import ContainerVariants from './ContainerVariants.tsx';
+import { motion } from 'framer-motion'
 // @ts-expect-error TS(2307): Cannot find module './images/events/christmasparty... Remove this comment to see the full error message
 import  ChristmasImg  from './images/events/christmasparty.jpg'
 // @ts-expect-error TS(2307): Cannot find module './images/events/BBQ.jpg' or it... Remove this comment to see the full error message
@@ -86,28 +87,36 @@ function EventsDetails() {
 
     
     const EventCards = data.map((item) =>
-    <div className='container justify-content-space-between text-align-center shadow'
-    style={{
-      width: '80%',
-      marginBottom: '10vh'
-    }}>
-        <div className='row'>
-            <div className='col-lg-6 d-flex justify-content-center'>
-                <img src={item.src} className='img-fluid border border-4 border-warning' alt="" style={{
-                    height:'80%',
-                    margin:'auto',
-                    justifyContent:'center',
+    <motion.div
+    variants={ContainerVariants()}
+    initial="hidden"
+    whileInView="visible">
+        <div className='container justify-content-space-between text-align-center shadow'
+        style={{
+        width: '80%',
+        marginBottom: '10vh',
+        borderRadius: '10px', // 任意の角の半径を指定します
+        backgroundColor: '#f0f0f0', // 任意の背景色を指定します
+        padding: '20px',
+        }}>
+            <div className='row'>
+                <div className='col-lg-6 d-flex justify-content-center' >
+                    <img src={item.src} className='img-fluid border border-4 border-warning' alt="" style={{
+                        height:'80%',
+                        margin:'auto',
+                        justifyContent:'center',
 
-                }}/>
-            </div>
-            <div className='col-lg-6 d-flex flex-column align-items-center justify-content-center mb-5 mb-lg-2'>
-                <b>{item.title}</b>
-                <div className='py-2 px-1'>
-                  {item.desc}
+                    }}/>
+                </div>
+                <div className='col-lg-6 d-flex flex-column align-items-center justify-content-center mb-5 mb-lg-2'>
+                    <b>{item.title}</b>
+                    <div className='py-2 px-1'>
+                    {item.desc}
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </motion.div>
         )
     return (
         <div>

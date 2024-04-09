@@ -9,25 +9,31 @@ const ButtonComponent = () => {
 
     return (
     <div className='container '>
-        <div className='col-md-6 text-center my-2 mx-1'
-        style={{
-            textAlign: 'center',
+        <div className="row" style={{
             justifyContent: 'center',
-            margin :'auto',
-            marginTop: '50px',
+            alignContent: 'center',
+            margin: 'auto',
         }}>
-            <Link to="/shinkan">
-                <Button variant="warning">詳しく見る →</Button>
-            </Link>
-        </div>
-        <div className='col-md-6 text-center my-2 mx-1' 
-        style={{
-            textAlign: 'center',
-            justifyContent: 'center',
-            margin :'auto',
-            marginTop: '50px',
-        }}>
-            <ModalComponent/>
+            <div className='col-lg-4 col-sm-6 text-center'
+            style={{
+                textAlign: 'center',
+                justifyContent: 'center',
+                margin :'auto',
+                marginTop: '40px',
+            }}>
+                <Link to="/shinkan">
+                    <Button variant="warning">詳しく見る →</Button>
+                </Link>
+            </div>
+            <div className='col-lg-4  col-sm-6 text-center'
+            style={{
+                textAlign: 'center',
+                justifyContent: 'center',
+                margin :'auto',
+                marginTop: '40px',
+            }}>
+                <ModalComponent/>
+            </div>
         </div>
   </div>
   )
@@ -49,7 +55,8 @@ function JoinUs() {
             style={{
             marginBottom: '10vh'
             }}>
-                <div className='row'>
+                <div className='row' style={{
+                }}>
                     <div className='col-md-6 d-flex justify-content-center'>
                         <div className='d-flex justify-content-center'>
                             <img className='img-fluid border border-3 border-dark' src={Calendar} alt="" style={{maxHeight: '300px', objectFit: 'cover'}}/>
@@ -66,7 +73,11 @@ function JoinUs() {
                         一度、練習やイベント・合宿に参加してBESTERの雰囲気を味わってみませんか？
                         今年の新歓日程はカレンダーの通りです。是非一度遊びに来てください！
                         </div>
-                        <ButtonComponent/>
+                        <div style={{
+                            maxWidth: '300px'
+                        }}>
+                            <ButtonComponent/>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -11,15 +11,35 @@ import ImagesSlide from './ImagesSlide.tsx';
 const ButtonComponent = () => {
 
     return (
-    <div
-    style={{
-        marginTop: '50px',
-        textAlign: 'center'
-    }}>
-        <Link to="/events">
-            <Button variant="warning">詳しく見る →</Button>
-        </Link>
-    </div>)
+    <div className='container '>
+        <div className="row" style={{
+            justifyContent: 'center',
+            alignContent: 'center',
+            margin: 'auto',
+        }}>
+            <div className='col-lg-4 col-sm-6 text-center'
+            style={{
+                textAlign: 'center',
+                margin :'auto',
+                marginTop: '40px',
+            }}>
+                <Link to="/events">
+                    <Button variant="warning">詳しく見る →</Button>
+                </Link>
+            </div>
+            <div className='col-lg-4  col-sm-6 text-center'
+            style={{
+                textAlign: 'center',
+                margin :'auto',
+                marginTop: '40px',
+            }}>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLScGd1GUGHs0WEt60JSf8lHXGq5nIzC8SCy4jYHOMt-H1FIfBw/viewform">
+                    <Button variant="warning">イベントに参加 →</Button>
+                </a>
+            </div>
+        </div>
+  </div>
+  )
 };
 
 function Events() {
@@ -47,19 +67,27 @@ function Events() {
                 textAlign: 'center',
                 margin: 'auto',
                 }}>
-                    <div className='col-md-6 d-flex justify-content-center'>
+                    <div className='col-lg-6 d-flex justify-content-center'>
                         <ImagesSlide/>
                     </div>
-                    <div className='col-md-6 d-flex flex-column align-items-center justify-content-center mb-5 mb-lg-2 text-dark'
+                    <div className='col-lg-6 d-flex flex-column align-items-center justify-content-center mb-5 text-dark'
                     style={{
                         marginTop: '20px',
+                        maxWidth: '550px'
                     }}>
                         <div>
                             べスターでは月に1回ほどでイベントを開催しています。
                             BBQ / 花火大会 / クリスマスパーティなど季節感のあるイベント盛りだくさんで盛り上がること間違いなし！
                             アットホームな雰囲気が特徴です！
                         </div>
-                        <ButtonComponent/>
+                        <div style={{
+                            maxWidth: '300px',
+                            justifyContent: 'center',
+                            alignContent: 'center',
+                            margin: 'auto'
+                        }}>
+                            <ButtonComponent/>
+                        </div>
                     </div>
                 </div>
             </div>

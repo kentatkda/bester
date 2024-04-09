@@ -10,22 +10,90 @@ import Social from '../components/Social.tsx'
 import Tennis from '../components/Tennis.tsx'
 import CharmPoints from '../components/CharmPoints.tsx'
 import ContactDetails from '../components/Contacts.tsx'
+import ShowLogo from '../components/ShowLogo.tsx'
+import { useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
+import ContainerVariants from '../components/ContainerVariants.tsx'
 
-function Home() {
+
+
+export const Home = () => {
+  const [showLogo, setShowLogo] = useState(true);
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowLogo(false);
+    }, 3000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
-    <div>
+    <div className="Home">
+      {showLogo ? <ShowLogo /> : <HomeComponent />}
+    </div>
+  )
+}
+
+function HomeComponent() {
+  return (
+    <motion.div
+      className="home"
+      initial={{ opacity: 0, x: 0 }}
+      animate={{ opacity: 1, x: 0 }}
+      transition={{ duration: 1.5 }}>
         <Header/>
         <Social/>
         <PageCover/>
-        <AboutBester/>
-        <CharmPoints/>
-        <Tennis/>
-        <Gallery/>
-        <Events/>
-        <JoinUs/>
-        <ContactDetails/>
-        <Footer/>
-    </div>
+        <motion.div
+        variants={ContainerVariants()}
+        initial="hidden"
+        whileInView="visible"
+        >
+          <AboutBester/>
+        </motion.div>
+        <motion.div
+        variants={ContainerVariants()}
+        initial="hidden"
+        whileInView="visible">
+          <CharmPoints/>
+        </motion.div>
+        <motion.div
+        variants={ContainerVariants()}
+        initial="hidden"
+        whileInView="visible">
+          <Tennis/>
+        </motion.div>
+        <motion.div
+        variants={ContainerVariants()}
+        initial="hidden"
+        whileInView="visible">
+          <Gallery/>
+        </motion.div>
+        <motion.div
+        variants={ContainerVariants()}
+        initial="hidden"
+        whileInView="visible">
+          <Events/>
+        </motion.div>
+        <motion.div
+        variants={ContainerVariants()}
+        initial="hidden"
+        whileInView="visible">
+          <JoinUs/>
+        </motion.div>
+        <motion.div
+        variants={ContainerVariants()}
+        initial="hidden"
+        whileInView="visible">
+          <ContactDetails/>
+        </motion.div>
+        <motion.div
+        variants={ContainerVariants()}
+        initial="hidden"
+        whileInView="visible">
+          <Footer/>
+        </motion.div>
+    </motion.div>
   )
 }
 
