@@ -58,7 +58,8 @@ import yui from './images/gallery/yui.jpg'
 import fuji from './images/gallery/fuji.JPG'
 // @ts-expect-error TS(2307): Cannot find module './images/gallery/kotomi.jpg' o... Remove this comment to see the full error message
 import kotomi from './images/gallery/kotomi.jpg'
-
+// @ts-expect-error TS(2307): Cannot find module './images/gallery/fifth.jpg' o... Remove this comment to see the full error message
+import fifth from './images/gallery/fifth.jpg'
 const GalleryDetailsHeader = () => {
     return (
         <h1 className='mb-3 d-flex text-uppercase fw-bold text-align-center justify-content-center' 
@@ -94,7 +95,7 @@ export default function GalleryDetails() {
         src6: disney,
         src7: tennis5,
         src8: kotomi,
-        src9: tennis6
+        src9: fifth
         },
         {
         src1: female,
@@ -200,7 +201,10 @@ export default function GalleryDetails() {
             variants={ContainerVariants()}
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true }}>
+            viewport={{ once: true }}
+            style={{
+                marginTop: '150px'
+            }}>
                 <GalleryDetailsHeader/>
             </motion.div>
             <div className="row"
@@ -215,141 +219,3 @@ export default function GalleryDetails() {
         </div>
     )
 }
-
-// function Galls() => {
-// return (
-//     <div>
-//         <div className="container py-5"
-//         style={{
-//             marginTop: '150px',
-//         }}>
-//             <motion.div
-//             variants={ContainerVariants()}
-//             initial="hidden"
-//             whileInView="visible">
-//                 <GalleryDetailsHeader/>
-//             </motion.div>
-//             <div className="row"
-//             style={{width: '80%',
-//                     margin: 'auto',
-//                     justifyContent: 'center',
-//                     alignContent: 'center',
-//                     marginTop: '100px',
-//                     }}>
-//                 <div className="col-md-4 px-2">
-//                     <motion.div
-//                     variants={ContainerVariants()}
-//                     initial="hidden"
-//                     whileInView="visible">
-//                         <div className="my-3 border border-4 border-dark" style={{overflow:'hidden'}}>
-//                             <img src={tennis6} className="img-fluid" alt="" style={{objectFit: 'cover'}}/>
-//                         </div>
-//                     </motion.div>
-//                     <motion.div
-//                     variants={ContainerVariants()}
-//                     initial="hidden"
-//                     whileInView="visible"> 
-//                         <div className="my-3 border border-4 border-dark" style={{overflow:'hidden'}}>
-//                             <img src={river} className="img-fluid" alt="" style={{objectFit: 'cover'}}/>
-//                         </div>
-//                     </motion.div>
-//                     <motion.div
-//                     variants={ContainerVariants()}
-//                     initial="hidden"
-//                     whileInView="visible">
-//                         <div className="my-3 border border-4 border-dark" style={{overflow:'hidden'}}>
-//                             <img src={ hanabi3 } className="img-fluid" alt="" style={{objectFit: 'cover'}}/>
-//                         </div>
-//                     </motion.div>
-//                     <motion.div
-//                     variants={ContainerVariants()}
-//                     initial="hidden"
-//                     whileInView="visible">
-//                         <div className="my-3 border border-4 border-dark" style={{overflow:'hidden'}}>
-//                             <img src={ iwai } className="img-fluid" alt="" style={{objectFit: 'cover'}}/>
-//                         </div>
-//                     </motion.div>
-//                     <motion.div
-//                     variants={ContainerVariants()}
-//                     initial="hidden"
-//                     whileInView="visible"></motion.div>
-//                     <div className="my-3 border border-4 border-dark" style={{overflow:'hidden'}}>
-//                         <img src={ BBQ2 } className="img-fluid" alt="" style={{objectFit: 'cover'}}/>
-//                     </div>
-//                     <div className="my-3 border border-4 border-dark" style={{overflow:'hidden'}}>
-//                         <img src={ fuji } className="img-fluid" alt="" style={{objectFit: 'cover'}}/>
-//                     </div>
-//                     <div className="my-3 border border-4 border-dark" style={{overflow:'hidden'}}>
-//                         <img src={ hanabi1 } className="img-fluid" alt="" style={{objectFit: 'cover'}}/>
-//                     </div>
-//                     <div className="my-3 border border-4 border-dark" style={{overflow:'hidden'}}>
-//                         <img src={band} className="img-fluid" alt="" style={{objectFit: 'cover'}}/>
-//                     </div>
-//                     <div className="my-3 border border-4 border-dark" style={{overflow:'hidden'}}>
-//                         <img src={ pink } className="img-fluid" alt="" style={{objectFit: 'cover'}}/>
-//                     </div>
-//                 </div>
-//                 <div className="col-md-4 px-2">
-//                     <div className="my-3 border border-4 border-dark" style={{overflow:'hidden'}}>
-//                         <img src={ backimg } className="img-fluid" alt="" style={{objectFit: 'cover'}}/>
-//                     </div>
-//                     <div className="my-3 border border-4 border-dark" style={{overflow:'hidden'}}>
-//                         <img src={ BBQ } className="img-fluid" alt="" style={{objectFit: 'cover'}}/>
-//                     </div>
-//                     <div className="my-3 border border-4 border-dark" style={{overflow:'hidden'}}>
-//                         <img src={ oikon } className="img-fluid" alt="" style={{objectFit: 'cover'}}/>
-//                     </div>
-//                     <div className="my-3 border border-4 border-dark" style={{overflow:'hidden'}}>
-//                         <img src={ tennis2 } className="img-fluid" alt="" style={{objectFit: 'cover'}}/>
-//                     </div>
-//                     <div className="my-3 border border-4 border-dark" style={{overflow:'hidden'}}>
-//                         <img src={ hanabi } className="img-fluid" alt="" style={{objectFit: 'cover'}}/>
-//                     </div>
-//                     <div className="my-3 border border-4 border-dark" style={{overflow:'hidden'}}>
-//                         <img src={ disney } className="img-fluid" alt="" style={{objectFit: 'cover'}}/>
-//                     </div>
-//                     <div className="my-3 border border-4 border-dark" style={{overflow:'hidden'}}>
-//                         <img src={ tennis5 } className="img-fluid" alt="" style={{objectFit: 'cover'}}/>
-//                     </div>
-//                     <div className="my-3 border border-4 border-dark" style={{overflow:'hidden'}}>
-//                         <img src={ kotomi } className="img-fluid" alt="" style={{objectFit: 'cover'}}/>
-//                     </div>
-//                     <div className="my-3 border border-4 border-dark" style={{overflow:'hidden'}}>
-//                         <img src={ tennis5 } className="img-fluid" alt="" style={{objectFit: 'cover'}}/>
-//                     </div>
-//                 </div>
-//                 <div className="col-md-4 px-2">
-//                     <div className="my-3 border border-4 border-dark" style={{overflow:'hidden'}}>
-//                         <img src={female} className="img-fluid" alt="" style={{objectFit: 'cover'}}/>
-//                     </div>
-//                     <div className="my-3 border border-4 border-dark" style={{overflow:'hidden'}}>
-//                         <img src={ snow } className="img-fluid" alt="" style={{objectFit: 'cover'}}/>
-//                     </div>
-//                     <div className="my-3 border border-4 border-dark" style={{overflow:'hidden'}}>
-//                         <img src={ hanabi4 } className="img-fluid" alt="" style={{objectFit: 'cover'}}/>
-//                     </div>
-//                     <div className="my-3 border border-4 border-dark" style={{overflow:'hidden'}}>
-//                         <img src={ yui } className="img-fluid" alt="" style={{objectFit: 'cover'}}/>
-//                     </div>
-//                     <div className="my-3 border border-4 border-dark" style={{overflow:'hidden'}}>
-//                         <img src={ kotose } className="img-fluid" alt="" style={{objectFit: 'cover'}}/>
-//                     </div>
-//                     <div className="my-3 border border-4 border-dark" style={{overflow:'hidden'}}>
-//                         <img src={ tennis4 } className="img-fluid" alt="" style={{objectFit: 'cover'}}/>
-//                     </div>
-//                     <div className="my-3 border border-4 border-dark" style={{overflow:'hidden'}}>
-//                         <img src={ sleep } className="img-fluid" alt="" style={{objectFit: 'cover'}}/>
-//                     </div>
-//                     <div className="my-3 border border-4 border-dark" style={{overflow:'hidden'}}>
-//                         <img src={ nagomi } className="img-fluid" alt="" style={{objectFit: 'cover'}}/>
-//                     </div>
-//                     <div className="my-3 border border-4 border-dark" style={{overflow:'hidden'}}>
-//                         <img src={ tennis3 } className="img-fluid" alt="" style={{objectFit: 'cover'}}/>
-//                     </div>
-//                 </div>
-//             </div>
-//             </div>
-
-//         </div>
-//     )
-//     }

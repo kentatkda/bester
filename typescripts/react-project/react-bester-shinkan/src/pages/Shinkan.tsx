@@ -4,13 +4,25 @@ import Social from '../components/Social.tsx'
 import Footer from '../components/Footer.tsx'
 import ShinkanDetails from '../components/ShinkanDetails.tsx'
 import ModalComponent from '../components/ModalComponent.tsx'
+import { motion } from 'framer-motion';
+import ContainerVariants from '../components/ContainerVariants.tsx'
 
 function Shinkan() {
   return (
     <div>
+      <motion.div
+      className="home"
+      initial={{ opacity: 0, x: 0 }}
+      animate={{ opacity: 1, x: 0 }}
+      transition={{ duration: 1.5 }}>
         <Header/>
         <Social/>
-        <ShinkanDetails/>
+      </motion.div>
+      <ShinkanDetails/>
+      <motion.div
+      variants={ContainerVariants()}
+      initial="hidden"
+      whileInView="visible">
         <div className='text-center justify-content-center' style={{
           justifyContent: 'center',
           alignContent: 'center',
@@ -18,7 +30,13 @@ function Shinkan() {
         }}>
           <ModalComponent/>
         </div>
+      </motion.div>
+      <motion.div
+        variants={ContainerVariants()}
+        initial="hidden"
+        whileInView="visible">
         <Footer/>
+      </motion.div>
     </div>
   )
 }

@@ -11,6 +11,8 @@ import IchinenImg from './images/shinkan/ShinkanIchinenImg.jpg'
 import Calendar from './images/home/Calendar.jpg'
 // @ts-expect-error TS(6142): Module './ShinkanJoinButton.tsx' was resolved to 'C... Remove this comment to see the full error message
 import ModalComponent from './ModalComponent.tsx'
+import { motion } from 'framer-motion';
+import ContainerVariants from '../components/ContainerVariants.tsx'
 
 function ShinkanDescription () {
   const data = [
@@ -32,34 +34,40 @@ function ShinkanDescription () {
     },]
 
     const ShinkanCards = data.map((item) =>
-    <div className='container justify-content-space-between text-align-center shadow'
-    style={{
-      width: '80%',
-      marginBottom: '10vh',
-      borderRadius: '10px', // 任意の角の半径を指定します
-      backgroundColor: '#f0f0f0', // 任意の背景色を指定します
-      padding: '20px',
-    }}>
-        <div className='row'>
-            <div className='col-lg-6 d-flex justify-content-center'>
-                <img src={item.src} className='img-fluid border border-3 border-warning' alt="" style={{
-                    height:'80%',
-                    margin:'auto',
-                    justifyContent:'center',
+    <motion.div
+      variants={ContainerVariants()}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}>
+      <div className='container justify-content-space-between text-align-center shadow'
+      style={{
+        width: '80%',
+        marginBottom: '10vh',
+        borderRadius: '10px', // 任意の角の半径を指定します
+        backgroundColor: '#f0f0f0', // 任意の背景色を指定します
+        padding: '20px',
+      }}>
+          <div className='row'>
+              <div className='col-lg-6 d-flex justify-content-center'>
+                  <img src={item.src} className='img-fluid border border-3 border-warning' alt="" style={{
+                      height:'80%',
+                      margin:'auto',
+                      justifyContent:'center',
 
-                }}/>
-            </div>
-            <div className='col-lg-6 d-flex flex-column align-items-center justify-content-center mb-5 mb-lg-2'>
-                <b style={{marginTop: '30px'}}>{item.title}</b>
-                <div className='py-2 px-1' style={{
-                  textAlign: 'center',
-                  width: '90%'
-                }}>
-                  {item.desc}
-                </div>
-            </div>
-        </div>
-    </div>
+                  }}/>
+              </div>
+              <div className='col-lg-6 d-flex flex-column align-items-center justify-content-center mb-5 mb-lg-2'>
+                  <b style={{marginTop: '30px'}}>{item.title}</b>
+                  <div className='py-2 px-1' style={{
+                    textAlign: 'center',
+                    width: '90%'
+                  }}>
+                    {item.desc}
+                  </div>
+              </div>
+          </div>
+      </div>
+    </motion.div>
     )
   return (
     <div>
@@ -67,13 +75,18 @@ function ShinkanDescription () {
         style={{
             marginTop: '150px'
         }}>
-          <h1 className='mb-3 d-flex text-uppercase fw-bold text-align-center justify-content-center' 
-          style={{
-              margin:'auto'
-          }}>
-              <p className='text-warning'> WHAT </p>
-              &nbsp; WE Do
-          </h1>
+          <motion.div
+          variants={ContainerVariants()}
+          initial="hidden"
+          whileInView="visible">
+            <h1 className='mb-3 d-flex text-uppercase fw-bold text-align-center justify-content-center' 
+            style={{
+                margin:'auto'
+            }}>
+                <p className='text-warning'> WHAT </p>
+                &nbsp; WE Do
+            </h1>
+          </motion.div>
           <div className='ShinkanCards'
           style={{
               marginTop: '100px'
@@ -93,39 +106,44 @@ function ShinkanHeader () {
       margin: 'auto',
       marginTop: '20vh',
     }}>
-      <div className='row'>
-        <div className="col-lg-4 d-flex flex-column align-items-center justify-content-center text-center"
-        style={{
-            margin: 'auto',
-            width: '450px',
+      <motion.div
+      variants={ContainerVariants()}
+      initial="hidden"
+      whileInView="visible">
+        <div className='row'>
+          <div className="col-lg-4 d-flex flex-column align-items-center justify-content-center text-center"
+          style={{
+              margin: 'auto',
+              width: '450px',
+              justifyContent: 'center',
+              alignContent: 'space-between'
+          }}>
+            <div className='d-flex justify-content-center'>
+              <img className='img-fluid border border-3 border-dark' src={Calendar} alt="" style={{maxHeight: '300px', objectFit: 'cover'}}/>
+            </div>
+          </div>
+          <div className="col-lg-4 d-flex flex-column justify-content-center" style={{
+            alignContent: 'left',
+            textAlign: 'center',
             justifyContent: 'center',
-            alignContent: 'space-between'
-        }}>
-          <div className='d-flex justify-content-center'>
-            <img className='img-fluid border border-3 border-dark' src={Calendar} alt="" style={{maxHeight: '300px', objectFit: 'cover'}}/>
+            marginRight: 'auto',
+          }}>
+              <h2 className="fs-1 mb-3 text-uppercase fw-bold text-center justify-content-center"style={{marginTop: '50px'}}> Shinkan  <p className='text-warning'>Info</p> </h2>
+              <p className="mb-3" style={{
+                // maxWidth: '90%',
+                textAlign: 'center',
+                fontSize: '16px',
+                margin: 'auto'
+              }}>
+                少し気になったな～というそこのあなた！
+                一度、新歓練習やイベントに参加してBESTERの雰囲気を味わってみませんか？
+                あなたもきっとBESTERを好きになるはず..！
+                連絡は下のリンクまたは、X, Instagram のDMからお待ちしています！
+              </p>
+              <ModalComponent/>
           </div>
         </div>
-        <div className="col-lg-4 d-flex flex-column justify-content-center" style={{
-          alignContent: 'left',
-          textAlign: 'center',
-          justifyContent: 'center',
-          marginRight: 'auto',
-        }}>
-            <h2 className="fs-1 mb-3 text-uppercase fw-bold text-center justify-content-center"style={{marginTop: '50px'}}> Shinkan  <p className='text-warning'>Info</p> </h2>
-            <p className="mb-3" style={{
-              // maxWidth: '90%',
-              textAlign: 'center',
-              fontSize: '16px',
-              margin: 'auto'
-            }}>
-              少し気になったな～というそこのあなた！
-              一度、新歓練習やイベントに参加してBESTERの雰囲気を味わってみませんか？
-              あなたもきっとBESTERを好きになるはず..！
-              連絡は下のリンクまたは、X, Instagram のDMからお待ちしています！
-            </p>
-            <ModalComponent/>
-        </div>
-      </div>
+      </motion.div>
     </div>
   )
 }

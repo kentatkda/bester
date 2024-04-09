@@ -9,8 +9,20 @@ import Contact from './pages/Contact.tsx';
 import Shinkan from './pages/Shinkan.tsx';
 import Events from './pages/Events.tsx';
 import Gallery from './pages/Gallery.tsx';
+import { useEffect } from 'react';
 import './style.css';
 import { AnimatePresence } from 'framer-motion';
+
+const ScrollToTop = () => {
+  const { pathname } = useLocation()
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [pathname])
+
+  return null
+}
+
 
 
 const App = () => {
@@ -20,6 +32,7 @@ const App = () => {
   return (
     <div className="App">
       <AnimatePresence mode="wait">
+      <ScrollToTop/>
         <Routes location={ location } key={location.pathname}>
           <Route path="/" element={ <Home /> }/>
           <Route path="/events" element={ <Events /> } />
