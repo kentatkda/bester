@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import Button from 'react-bootstrap/Button'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ImagesSlide from './ImagesSlide.tsx';
+import ModalComponent from './ModalComponent.tsx';
 
 
 
@@ -17,7 +18,7 @@ const ButtonComponent = () => {
             alignContent: 'center',
             margin: 'auto',
         }}>
-            <div className='col-lg-4 col-sm-6 text-center'
+            <div className='col-lg-4 col-md-5 col-sm-6 text-center'
             style={{
                 textAlign: 'center',
                 margin :'auto',
@@ -27,15 +28,13 @@ const ButtonComponent = () => {
                     <Button variant="warning">詳しく見る →</Button>
                 </Link>
             </div>
-            <div className='col-lg-4  col-sm-6 text-center'
+            <div className='col-lg-4 col-md-5  col-sm-6 text-center'
             style={{
                 textAlign: 'center',
                 margin :'auto',
                 marginTop: '40px',
             }}>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLScGd1GUGHs0WEt60JSf8lHXGq5nIzC8SCy4jYHOMt-H1FIfBw/viewform">
-                    <Button variant="warning">イベントに参加 →</Button>
-                </a>
+                <ModalComponent/>
             </div>
         </div>
   </div>

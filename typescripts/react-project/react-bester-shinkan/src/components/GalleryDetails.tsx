@@ -98,14 +98,14 @@ export default function GalleryDetails() {
         src9: fifth
         },
         {
-        src1: female,
+        src1: nagomi,
         src2: snow,
         src3: hanabi4,
         src4: yui,
         src5: kotose,
         src6: tennis4,
         src7: sleep,
-        src8: nagomi,
+        src8: female,
         src9: tennis3
         }
     ]

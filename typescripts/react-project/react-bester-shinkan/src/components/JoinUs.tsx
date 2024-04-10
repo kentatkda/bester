@@ -14,7 +14,7 @@ const ButtonComponent = () => {
             alignContent: 'center',
             margin: 'auto',
         }}>
-            <div className='col-lg-4 col-sm-6 text-center'
+            <div className='col-lg-3 col-sm-6 text-center'
             style={{
                 textAlign: 'center',
                 justifyContent: 'center',
@@ -25,7 +25,7 @@ const ButtonComponent = () => {
                     <Button variant="warning">詳しく見る →</Button>
                 </Link>
             </div>
-            <div className='col-lg-4  col-sm-6 text-center'
+            <div className='col-lg-3  col-sm-6 text-center'
             style={{
                 textAlign: 'center',
                 justifyContent: 'center',
@@ -56,6 +56,10 @@ function JoinUs() {
             marginBottom: '10vh'
             }}>
                 <div className='row' style={{
+                    width: '90%',
+                    justifyContent: 'center',
+                    alignContent: 'center',
+                    margin: 'auto'
                 }}>
                     <div className='col-md-6 d-flex justify-content-center'>
                         <div className='d-flex justify-content-center'>

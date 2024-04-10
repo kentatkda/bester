@@ -1,7 +1,8 @@
 import React from 'react'
 // @ts-expect-error TS(2307): Cannot find module './images/home/TennisImg.jpg' o... Remove this comment to see the full error message
 import TennisIrast from './images/home/TennisImg.jpg'
-import { Button } from 'react-bootstrap'
+// import { Button } from 'react-bootstrap'
+import ModalComponent from './ModalComponent.tsx';
 const ButtonComponent = () => {
 
   return (
@@ -10,9 +11,10 @@ const ButtonComponent = () => {
     textAlign: 'center',
     marginTop: '50px',
   }}>
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeCYrwDQU9gSNg9isITgTPw2vnQl_xYLTqYerwSaZ7WGVp2SA/viewform">
+      {/* <a href="https://docs.google.com/forms/d/e/1FAIpQLSeCYrwDQU9gSNg9isITgTPw2vnQl_xYLTqYerwSaZ7WGVp2SA/viewform">
           <Button variant="warning">練習に参加 →</Button>
-      </a>
+      </a> */}
+      <ModalComponent/>
   </div>)
 };
 
@@ -43,7 +45,7 @@ function Tennis() {
                     <div>
                       練習頻度は週2回程度で、
                       練習場所は主に浮間舟渡/茗荷谷/駒場などで家が近い練習場所に参加できます！
-                      団体戦のチームに参加すると大会前に練習を増やすことも可能です！
+                      初心者の割合も多いので初心者の方も始めやすいのが特徴です。
                     </div>
                     <ButtonComponent/>
                 </div>

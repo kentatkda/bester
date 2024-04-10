@@ -13,12 +13,12 @@ function Social() {
       <ul className="social">
         <li>
           <a href="https://twitter.com/Bester_2024">
-            <img src={TwitterImage} alt=""/>
+            <img src={TwitterImage} alt="" style={{zIndex: '100'}}/>
           </a>
         </li>
         <li>
           <a href="https://www.instagram.com/bester_2024">
-            <img src={InstagramImage} alt=""/>
+            <img src={InstagramImage} alt="" style={{zIndex: '100'}}/>
           </a>
         </li>
       </ul>

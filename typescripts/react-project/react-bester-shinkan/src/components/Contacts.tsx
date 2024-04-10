@@ -20,9 +20,8 @@ function ContactInfo() {
                 Us
             </h1>
             <p className='text-center' >
-                興味を持っていただいてありがとうございます！
                 新歓練習・イベントに参加希望の方は
-                Twitter, InstagramのDMからご連絡の方お待ちしております。
+                twitter, InstagramのDMからご連絡の方お待ちしております。
             </p>
         </div>
     )
@@ -31,10 +30,12 @@ function ContactInfo() {
 function ContactDetails() {
     const media = [
         {title: "東大BESTER新歓2024",
+        id: 'twitter',
         src: TwitterImage,
         url: "https://twitter.com/Bester_2024",
         },
         {title: "東大BESTER新歓2024",
+        id: "instagram",
         src: InstaImage,
         url: "https://www.instagram.com/bester_2024",
         },
@@ -42,6 +43,7 @@ function ContactDetails() {
     
     const FollowButtons = media.map((item) => 
         <div className='container py-2 justify-content-space-around text-align-center'
+        key={item.id}
         style={{
             // width: '70%',
             margin: 'auto',

@@ -22,7 +22,7 @@ function ShinkanDescription () {
     },
     {title: "食事会",
     src:MealImg,
-    desc:"食事会は週１回開かれます。先輩や新入生と話す中で、BESTERの雰囲気を体感することができるのではないでしょうか？さらになんと！新入生は新歓時期特別価格500円で飲み食いすることができます！！人気故にすぐに定員に達してしまうので、１年生はフォーム提出を急げ！！"
+    desc:"食事会は週１回開かれます。先輩や新入生と話す中で、BESTERの雰囲気を体感することができるのではないでしょうか？さらになんと！新入生は新歓時期特別価格700円程で飲み食いすることができます。すぐ定員に達してしまうので興味のある人はフォーム提出を急げ！！"
     },
     {title: "一年会",
     src:IchinenImg,
@@ -111,7 +111,7 @@ function ShinkanHeader () {
       initial="hidden"
       whileInView="visible">
         <div className='row'>
-          <div className="col-lg-4 d-flex flex-column align-items-center justify-content-center text-center"
+          <div className="col-lg-5 d-flex flex-column align-items-center justify-content-center text-center"
           style={{
               margin: 'auto',
               width: '450px',
@@ -122,11 +122,12 @@ function ShinkanHeader () {
               <img className='img-fluid border border-3 border-dark' src={Calendar} alt="" style={{maxHeight: '300px', objectFit: 'cover'}}/>
             </div>
           </div>
-          <div className="col-lg-4 d-flex flex-column justify-content-center" style={{
+          <div className="col-lg-5 d-flex flex-column justify-content-center" style={{
             alignContent: 'left',
             textAlign: 'center',
             justifyContent: 'center',
             marginRight: 'auto',
+            marginBottom: '40px'
           }}>
               <h2 className="fs-1 mb-3 text-uppercase fw-bold text-center justify-content-center"style={{marginTop: '50px'}}> Shinkan  <p className='text-warning'>Info</p> </h2>
               <p className="mb-3" style={{
@@ -138,7 +139,7 @@ function ShinkanHeader () {
                 少し気になったな～というそこのあなた！
                 一度、新歓練習やイベントに参加してBESTERの雰囲気を味わってみませんか？
                 あなたもきっとBESTERを好きになるはず..！
-                連絡は下のリンクまたは、X, Instagram のDMからお待ちしています！
+                連絡お待ちしています！
               </p>
               <ModalComponent/>
           </div>

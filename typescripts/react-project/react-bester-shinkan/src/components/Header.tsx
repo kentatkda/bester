@@ -32,7 +32,7 @@ const Header = () => {
             }}/>
             <Navbar.Collapse id='basic-navbar-nav'>
             <Nav className='me-auto justify-content-end w-100 '>
-                <Nav.Link class="relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left" href='/' className='navigation-link text-black bg-transparent fw-bold'>home</Nav.Link>
+                <Nav.Link href='/' className='navigation-link text-black bg-transparent fw-bold'>home</Nav.Link>
                 <Nav.Link href='/gallery' className='navigation-link text-black bg-transparent fw-bold'>gallery</Nav.Link>
                 <Nav.Link href='/events' className='navigation-link text-black bg-transparent fw-bold'>events</Nav.Link>
                 <Nav.Link href='/shinkan' className='navigation-link text-black bg-transparent fw-bold'>shinkan</Nav.Link>

@@ -11,21 +11,24 @@ import TenbinImg from './images/home/tenbin.png'
 export default function CharmPoints() {
   const data = [
     {title: "男女比1:1",
+    id: "sex",
     src: SexImg,
-    desc: "べスターは男女比1:1、90人ほどの中規模なサークルです。"
+    desc: "べスターは男女比1:1、90人ほどの中規模なサークルです。男子は東京大学、女子は日本女子・お茶の水女子大学で構成されています。"
     },
     {title: "バランス",
+    id: "balance",
     src: TenbinImg,
-    desc: "べスターでは、テニスとイベント両方にバランスよく参加することができます。"
+    desc: "べスターでは、学業やバイトと両立しながらバランスよく自分のペースでテニスやイベントに参加することができます。"
     },
     {title: "一生の友情",
+    id: "friendship",
     src: AkusyuImg,
-    desc: "サークルとして中規模な分、お互い親密になりやすく一生涯の友情が芽生えるはず！"
+    desc: "サークルとして中規模な分、お互い親密になりやすく一生涯の友情が芽生えるはず！年の離れた先輩とも仲良くなりやすいのもBESTERの特徴です。"
     },
   ]
 
   const PointCards = data.map((item) =>
-  <div className="col-lg-4 col-sm-6 col-xs-6 px-2 ">
+  <div className="col-lg-4 col-sm-6 col-xs-6 px-2 " key={item.id}>
       <div className="my-3" 
       style={{
         overflow:'hidden',

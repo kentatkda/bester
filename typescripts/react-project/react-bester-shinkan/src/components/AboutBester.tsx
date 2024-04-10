@@ -11,7 +11,7 @@ function AboutBester() {
     <div className='container text-light py-5 text-center '
     style={{
       position: 'relative',
-      width: '80%',
+      width: '90%',
       textAlign: 'center',
       justifyContent: 'center',
       alignContent: 'center',

@@ -5,8 +5,6 @@ import Modal from 'react-modal'
 import { useState } from 'react';
 import './ModalComponent.css'
 import CloseIcon from '@mui/icons-material/Close';
-import SportsTennisIcon from '@mui/icons-material/SportsTennis';
-import RestaurantIcon from '@mui/icons-material/Restaurant';
 import XIcon from '@mui/icons-material/X';
 import InstagramIcon from '@mui/icons-material/Instagram';
 
@@ -71,11 +69,11 @@ function ModalComponent() {
                 setEditModalIsOpen(false);
               }}/>
           </div>
-          {/* <p style={{
-            maxWidth: '50%',
-            fontSize: '12px',
+          <p style={{
+            maxWidth: '80%',
+            fontSize: '14px',
             marginLeft: '30px',
-          }}>テニス練習に参加希望の方は「テニスに参加」のボタンを、一年会や食事会に参加希望の方は「イベントに参加」を押してください。</p> */}
+          }}>新歓への参加希望はX, instagramのDMから受け付けております。</p>
           <div className='row d-flex mx-3' style={{
             justifyContent: 'center',
             alignContent: 'center'
@@ -85,12 +83,12 @@ function ModalComponent() {
               alignContent: 'center',
               margin: 'auto',
             }}>
-            <a  className="text-center justify-content-center" href="https://docs.google.com/forms/d/e/1FAIpQLSeCYrwDQU9gSNg9isITgTPw2vnQl_xYLTqYerwSaZ7WGVp2SA/viewform" >
-              <SportsTennisIcon style={{color: 'black', fontSize: '40px', pointerEvents: 'none', marginBottom: '15px',}}/>
+            <a  className="text-center justify-content-center" href="https://twitter.com/BESTER_2024" >
+              <XIcon style={{color: 'black', fontSize: '40px', pointerEvents: 'none', marginBottom: '15px',}}/>
                 <div>
-                  <Button variant='secondary' className='' style={{marginTop: '10px'}} >
+                  <Button variant='warning' className='' style={{marginTop: '10px'}} >
                   <div style={{fontSize: '13px'}}>
-                    テニスに参加 →
+                    XからDM →
                   </div>
                   </Button>
                 </div>
@@ -101,19 +99,19 @@ function ModalComponent() {
               margin: 'auto',
 
               }}>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScGd1GUGHs0WEt60JSf8lHXGq5nIzC8SCy4jYHOMt-H1FIfBw/viewform" >
-                  <RestaurantIcon style={{color: 'black', fontSize: '40px', marginBottom: '15px'}}/>
+            <a href="https://www.instagram.com/bester_2024" >
+                  <InstagramIcon style={{color: 'black', fontSize: '40px', marginBottom: '15px'}}/>
                   <div>
-                    <Button variant='secondary' style={{marginTop: '10px'}}>
+                    <Button variant='warning' style={{marginTop: '10px'}}>
                       <div style={{ fontSize: '13px'}}>
-                        イベントに参加 →
+                        インスタからDM →
                       </div>
                     </Button>
                   </div>
             </a>
             </div>
           </div>
-          <div className='row d-flex' style={{
+          {/* <div className='row d-flex' style={{
             justifyContent: 'flex-end',
             alignContent: 'flex-end',
             margin: 'auto'
@@ -128,7 +126,7 @@ function ModalComponent() {
                 <InstagramIcon className='modal-social' style={{ color: 'black' }} />
               </a>
             </div>
-          </div>
+          </div> */}
         </div>
       </Modal>
     </div>

@@ -12,13 +12,13 @@ const PageCoverText = () => {
             }}>
                 BESTER
             </h2>
-            <h5 className='col-md-5 text-white' style={{
-                maxWidth: '80%',
-                fontSize: '17px'
+            <h5 className='col-md-7 col-sm-9 col-xs-9 text-white' style={{
+                maxWidth: '85%',
+                fontSize: '15px'
             }}>
                 東京大学/日本女子大学/御茶ノ水女子大学のインカレテニスサークル
             </h5>
-            <h3 className='col-md-5 text-white' style={{
+            <h3 className='col-md-7 col-sm-9 col-xs-9 text-white' style={{
                 fontSize: '24px'
             }}>
                 最後の青春時代を私たちとともに。
