@@ -5,8 +5,13 @@ import Modal from 'react-modal'
 import { useState } from 'react';
 import './ModalComponent.css'
 import CloseIcon from '@mui/icons-material/Close';
-import XIcon from '@mui/icons-material/X';
-import InstagramIcon from '@mui/icons-material/Instagram';
+// import XIcon from '@mui/icons-material/X';
+// import InstagramIcon from '@mui/icons-material/Instagram';
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+// @ts-expect-error TS(2307): Cannot find module './images/symbol/insta_logo.png'... Remove this comment to see the full error message
+import  InstaImage from './images/symbol/insta_logo.png'
+// @ts-expect-error TS(2307): Cannot find module './images/symbol/x_logo.png' o... Remove this comment to see the full error message
+import XImage from './images/symbol/x_logo.png'
 
 const customStyles = {
   content: {
@@ -17,10 +22,11 @@ const customStyles = {
     bottom: "auto",
     marginRight: "-50%",
     transform: "translate(-50%, -50%)",
-    minWidth: "40%",
+    maxWidth: '350px',
     border: "none",
     borderRadius: "20px",
-    boxShadow: "0px 0px 10px 0px black",
+    boxShadow: "0px 0px 5px 0px black",
+    zIndex: '102'
   },
 };
 
@@ -45,88 +51,71 @@ function ModalComponent() {
         新歓に参加 →
       </Button>
       <Modal isOpen={editModalIsOpen} onRequestClose={() => setEditModalIsOpen(false)} style={customStyles}>
-        <div className='text-dark my-3 px-0'>
+        <div className='text-dark px-0' style={{zIndex:'102'}}>
           <div className='container' style={{
-            boxShadow: '0px 5px 5px -3px rgba(255, 187, 0, 0.8)',
-            justifyContent: 'space-between',
+            justifyContent: 'center',
             margin: 'auto',
-            display: 'flex',
             alignContent: 'center',
-            marginBottom: '40px',
+            marginBottom: '25px',
             }}>
-            <div className='col-10'>
-              <h4 className='text-dark fw-bold px-0 mx-0 my-3' style={{
-                fontSize: '20px'
+              <h4 className='text-dark text-center fw-bold px-0 mx-0 my-3' style={{
+                fontSize: '20px',
+                marginBottom: '50px'
               }}> BESTERの新歓に参加</h4>
-            </div>
-            <CloseIcon className='col-2 mx-2' style={{
-              fontSize: '50px',
-              justifyContent:'flex-end' ,
-              alignContent: 'flex-end',
-              color: 'black',
-              }}
-              onClick={() => {
-                setEditModalIsOpen(false);
-              }}/>
           </div>
           <p style={{
             maxWidth: '80%',
-            fontSize: '14px',
-            marginLeft: '30px',
-          }}>新歓への参加希望はX, instagramのDMから受け付けております。</p>
-          <div className='row d-flex mx-3' style={{
+            fontSize: '15px',
+            textAlign: 'center',
             justifyContent: 'center',
-            alignContent: 'center'
-          }}>
-            <div className='col-6 my-3 fw-bold text-center' style={{
-              justifyContent: 'center',
-              alignContent: 'center',
-              margin: 'auto',
-            }}>
-            <a  className="text-center justify-content-center" href="https://twitter.com/BESTER_2024" >
-              <XIcon style={{color: 'black', fontSize: '40px', pointerEvents: 'none', marginBottom: '15px',}}/>
-                <div>
-                  <Button variant='warning' className='' style={{marginTop: '10px'}} >
-                  <div style={{fontSize: '13px'}}>
-                    XからDM →
-                  </div>
-                  </Button>
+            alignContent: 'center',
+            margin: 'auto',
+            marginBottom: '20px'
+          }}>新歓への参加希望はX, instagramのDMから受け付けております。</p>
+          <div id="modal-x" className='my-2 shadow py-3'>
+            <a  className="text-center justify-content-center" href="https://twitter.com/BESTER_2024" style={{textDecoration:'none'}}>
+              <div style={{display:'flex', justifyContent: 'center', alignContent: 'center', margin: 'auto'}}>
+                {/* <XIcon className='mx-3' style={{position: 'fixed', left: '35px', color: 'black', fontSize:'20px'}}/> */}
+                <img src={XImage} alt="" className='mx-3' style={{position: 'fixed', left: '35px', color: 'black', width:'20px'}}/>
+                <div className='mx-3 text-center' style={{fontSize: '17px', color:'black',}}>
+                  XからDM
                 </div>
+                <ArrowForwardIcon className='mx-3' style={{color:'black', position:'fixed', right: '40px'}}/>
+              </div>
             </a>
-            </div>
-            <div className='col-6 my-3 fw-bold text-center' style={{
-              alignContent: 'center',
-              margin: 'auto',
-
-              }}>
-            <a href="https://www.instagram.com/bester_2024" >
-                  <InstagramIcon style={{color: 'black', fontSize: '40px', marginBottom: '15px'}}/>
-                  <div>
-                    <Button variant='warning' style={{marginTop: '10px'}}>
-                      <div style={{ fontSize: '13px'}}>
-                        インスタからDM →
-                      </div>
-                    </Button>
-                  </div>
+          </div>
+          <div id="modal-insta" className='my-2 shadow py-3'>
+            <a className="text-center justify-content-center" href="https://www.instagram.com/bester_2024" style={{textDecoration:'none'}}>
+              <div style={{display:'flex', justifyContent: 'center', alignContent: 'center', margin: 'auto'}}>
+                {/* <InstagramIcon className='mx-3' style={{position: 'fixed', left: '35px' ,color: 'black', fontSize:'20px'}}/> */}
+                <img src={InstaImage} alt="" className='mx-3' style={{position: 'fixed', left: '35px', color: 'black', width:'20px'}}/>
+                <div className='mx-3' style={{fontSize: '17px', color:'black'}}>
+                  InstagramからDM
+                </div>
+                <ArrowForwardIcon className='mx-3' style={{color:'black', position:'fixed', right: '40px'}}/>
+              </div>
             </a>
+          </div>
+          <div className='container' style={{backgroundColor: 'rgba(255, 165, 0, 0.8)', marginTop: '20px'}}>
+            <div className='row d-flex py-1'
+            style={{display:'flex'}}
+            onClick={() => {
+              setEditModalIsOpen(false);
+            }}>
+              <div className='mx-2  text-center py-2' style={{fontSize:'17px', color: 'white', justifyContent: 'center', alignContent:'center', margin: 'auto'}}>
+                閉じる
+              </div>
+              <CloseIcon className='mx-2' style={{
+                fontSize: '40px',
+                color: 'white',
+                position: 'fixed',
+                right: '40px',
+                alignContent: 'center',
+                margin: 'auto',
+                }}
+                />
             </div>
           </div>
-          {/* <div className='row d-flex' style={{
-            justifyContent: 'flex-end',
-            alignContent: 'flex-end',
-            margin: 'auto'
-          }}>
-            <div className='col-1 my-3 mx-1 px-1' >
-              <a href="https://twitter.com/BESTER_2024">
-                <XIcon className='modal-social' style={{ color: 'black' }} />
-              </a>
-            </div>
-            <div className='col-1 my-3 mx-3 px-1' >
-              <a href="https://www.instagram.com/bester_2024">
-                <InstagramIcon className='modal-social' style={{ color: 'black' }} />
-              </a>
-            </div>
-          </div> */}
         </div>
       </Modal>
     </div>

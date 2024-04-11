@@ -5,7 +5,6 @@ import { Link } from 'react-router-dom';
 import Button from 'react-bootstrap/Button'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ImagesSlide from './ImagesSlide.tsx';
-import ModalComponent from './ModalComponent.tsx';
 
 
 
@@ -34,7 +33,6 @@ const ButtonComponent = () => {
                 margin :'auto',
                 marginTop: '40px',
             }}>
-                <ModalComponent/>
             </div>
         </div>
   </div>

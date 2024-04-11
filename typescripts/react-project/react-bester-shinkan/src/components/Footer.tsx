@@ -24,7 +24,7 @@ function Footer() {
           paddingTop: '0',
           margin: '0',
           // fontsize: '10px'
-        }}> Inter-College Tennis Circle of Tokyo Univ / Japan Women Univ / OChanomizu Univ. </h6>
+        }}> Inter-College Tennis Circle of Tokyo Univ / Japan Women Univ / Ochanomizu Univ. </h6>
         <h6 style={{
           marginBottom: '0',
           // fontsize: '10px'

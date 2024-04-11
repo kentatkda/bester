@@ -18,7 +18,7 @@ function ShinkanDescription () {
   const data = [
     {title: "テニス練習会",
     src:TennisImg,
-    desc:"基本週３回のペースで新歓テニス練習を実施しています。主に、浮間舟渡駅、茗荷谷駅、駒場近くのコートで練習しているので都合のいいコートの練習日を選ぶことができます！初心者の方には、ラケットを貸し出して１から先輩が教えてくれるので是非気軽に参加してみてください。"
+    desc:"基本週３回のペースで新歓テニス練習を実施しています。練習場所は主に、浮間舟渡駅、茗荷谷駅、駒場近くのコートです。初心者の方には、ラケットを貸し出して１から先輩が教えてくれるので是非気軽に参加してみてください。"
     },
     {title: "食事会",
     src:MealImg,
@@ -38,7 +38,8 @@ function ShinkanDescription () {
       variants={ContainerVariants()}
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true }}>
+      viewport={{ once: true }}
+      key={item.title}>
       <div className='container justify-content-space-between text-align-center shadow'
       style={{
         width: '80%',

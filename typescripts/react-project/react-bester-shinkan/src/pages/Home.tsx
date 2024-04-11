@@ -36,7 +36,8 @@ export const Home = () => {
 
 function HomeComponent() {
   return (
-    <motion.div
+    <div>
+      <motion.div
       className="home"
       initial={{ opacity: 0, x: 0 }}
       animate={{ opacity: 1, x: 0 }}
@@ -44,6 +45,7 @@ function HomeComponent() {
         <Header/>
         <Social/>
         <PageCover/>
+        </motion.div>
         <motion.div
         variants={ContainerVariants()}
         initial="hidden"
@@ -93,7 +95,7 @@ function HomeComponent() {
         whileInView="visible">
           <Footer/>
         </motion.div>
-    </motion.div>
+    </div>
   )
 }
 

@@ -76,6 +76,7 @@ export default function GalleryDetails() {
 
     const data = [
         {
+        row: "first",
         src1: tennis6,
         src2: river,
         src3: hanabi3,
@@ -87,6 +88,7 @@ export default function GalleryDetails() {
         src9: pink
         },
         {
+        row: "second",
         src1: backimg,
         src2: BBQ,
         src3: oikon,
@@ -98,6 +100,7 @@ export default function GalleryDetails() {
         src9: fifth
         },
         {
+        row: 'third',
         src1: nagomi,
         src2: snow,
         src3: hanabi4,
@@ -111,13 +114,15 @@ export default function GalleryDetails() {
     ]
 
     const ImagesLine = data.map((item) =>
-    <div className="col-md-4 px-2">
+    <div className="col-md-4 px-2" key={item.row}>
         <motion.div
         variants={ContainerVariants()}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true }}>
-            <div className="my-3 border border-4 border-dark" style={{overflow:'hidden'}}>
+        viewport={{ once: true }}
+        key={item.src1}
+        >
+            <div className="my-3 border border-4 border-dark" key={item.src1} style={{overflow:'hidden'}}>
                 <img src={item.src1} className="img-fluid" alt="" style={{objectFit: 'cover'}}/>
             </div>
         </motion.div>
@@ -125,8 +130,9 @@ export default function GalleryDetails() {
         variants={ContainerVariants()}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true }}>
-            <div className="my-3 border border-4 border-dark" style={{overflow:'hidden'}}>
+        viewport={{ once: true }}
+        key={item.src2}>
+            <div className="my-3 border border-4 border-dark" key={item.src2} style={{overflow:'hidden'}}>
                 <img src={item.src2} className="img-fluid" alt="" style={{objectFit: 'cover'}}/>
             </div>
         </motion.div>
@@ -134,8 +140,9 @@ export default function GalleryDetails() {
         variants={ContainerVariants()}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true }}>
-            <div className="my-3 border border-4 border-dark" style={{overflow:'hidden'}}>
+        viewport={{ once: true }}
+        key={item.src3}>
+            <div className="my-3 border border-4 border-dark" key={item.src3} style={{overflow:'hidden'}}>
                 <img src={ item.src3 } className="img-fluid" alt="" style={{objectFit: 'cover'}}/>
             </div>
         </motion.div>
@@ -143,8 +150,9 @@ export default function GalleryDetails() {
         variants={ContainerVariants()}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true }}>
-            <div className="my-3 border border-4 border-dark" style={{overflow:'hidden'}}>
+        viewport={{ once: true }}
+        key={item.src4}>
+            <div className="my-3 border border-4 border-dark" key={item.src4} style={{overflow:'hidden'}}>
                 <img src={ item.src4 } className="img-fluid" alt="" style={{objectFit: 'cover'}}/>
             </div>
         </motion.div>
@@ -152,8 +160,9 @@ export default function GalleryDetails() {
         variants={ContainerVariants()}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true }}>
-            <div className="my-3 border border-4 border-dark" style={{overflow:'hidden'}}>
+        viewport={{ once: true }}
+        key={item.src5}>
+            <div className="my-3 border border-4 border-dark" key={item.src5} style={{overflow:'hidden'}}>
                 <img src={ item.src5 } className="img-fluid" alt="" style={{objectFit: 'cover'}}/>
             </div>
         </motion.div>
@@ -161,17 +170,19 @@ export default function GalleryDetails() {
         variants={ContainerVariants()}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true }}>
-            <div className="my-3 border border-4 border-dark" style={{overflow:'hidden'}}>
+        viewport={{ once: true }}
+        key={item.src6}>
+            <div className="my-3 border border-4 border-dark" key={item.src6} style={{overflow:'hidden'}}>
                 <img src={ item.src6 } className="img-fluid" alt="" style={{objectFit: 'cover'}}/>
-            </div> 
+            </div>
         </motion.div>
         <motion.div
         variants={ContainerVariants()}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true }}>
-            <div className="my-3 border border-4 border-dark" style={{overflow:'hidden'}}>
+        viewport={{ once: true }}
+        key={item.src7}>
+            <div className="my-3 border border-4 border-dark" key={item.src7} style={{overflow:'hidden'}}>
                 <img src={ item.src7 } className="img-fluid" alt="" style={{objectFit: 'cover'}}/>
             </div>
         </motion.div>
@@ -179,18 +190,20 @@ export default function GalleryDetails() {
         variants={ContainerVariants()}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true }}>
-            <div className="my-3 border border-4 border-dark" style={{overflow:'hidden'}}>
-                <img src={ item.src8 } className="img-fluid" alt="" style={{objectFit: 'cover'}}/>
+        viewport={{ once: true }}
+        key={item.src8}>
+            <div className="my-3 border border-4 border-dark" style={{overflow:'hidden'}} key={item.src8} >
+                <img src={ item.src8 }className="img-fluid" alt="" style={{objectFit: 'cover'}}/>
             </div>
         </motion.div>
         <motion.div
         variants={ContainerVariants()}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true }}>
+        viewport={{ once: true }}
+        key={item.src9}>
             <div className="my-3 border border-4 border-dark" style={{overflow:'hidden'}}>
-                <img src={ item.src9 } className="img-fluid" alt="" style={{objectFit: 'cover'}}/>
+                <img src={ item.src9 } key={item.src9} className="img-fluid" alt="" style={{objectFit: 'cover'}}/>
             </div>
         </motion.div>
     </div>

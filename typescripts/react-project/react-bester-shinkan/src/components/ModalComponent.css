@@ -1,4 +1,16 @@
-.link {
-    text-decoration: none; /* 下線をなくす */
-    color: black; /* リンクの色を黒色に設定 */
-  }
+#modal-x {
+  transition: background-color 0.3s ease;
+}
+
+#modal-x:hover {
+  opacity: .5;
+  background-color: whitesmoke;
+}
+
+#modal-insta {
+  transition: background-color 0.3s ease;
+}
+
+#modal-insta:hover {
+  opacity: .5;
+}

@@ -81,7 +81,7 @@ function EventsDetails() {
         },
         {title: "3/10 春合宿",
         src:HarugaImg, 
-        desc:"4年生が卒業してサークルを去ってしまう為、春合宿は4年生が来れる最後の合宿になります。その年の春合宿に参加する人数は4年生の人望に比例するといえるのかもしれません...毎年一定数の花粉重症者が鼻水をすすりながら大合唱をしているのも見どころの一つです。"
+        desc:"4年生が卒業してサークルを去ってしまう為、春合宿は4年生が来れる最後の合宿になります。ある意味その年の春合宿に参加する人数は4年生の人望に比例するといえるのかもしれません...毎年一定数の花粉症重症者が鼻水をすすりながら大合唱をしているのも見どころの一つです。"
         },
     ]
 
@@ -90,7 +90,8 @@ function EventsDetails() {
     <motion.div
     variants={ContainerVariants()}
     initial="hidden"
-    whileInView="visible">
+    whileInView="visible"
+    key={item.title}>
         <div className='container justify-content-space-between text-align-center shadow'
         style={{
         width: '80%',

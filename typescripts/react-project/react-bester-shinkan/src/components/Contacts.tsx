@@ -1,8 +1,8 @@
 import React from 'react'
-// @ts-expect-error TS(2307): Cannot find module './images/symbol/instagram.png'... Remove this comment to see the full error message
-import  InstaImage from './images/symbol/instagram.png'
-// @ts-expect-error TS(2307): Cannot find module './images/symbol/twitter.png' o... Remove this comment to see the full error message
-import  TwitterImage from './images/symbol/twitter.png'
+// @ts-expect-error TS(2307): Cannot find module './images/symbol/insta_logo.png'... Remove this comment to see the full error message
+import  InstaImage from './images/symbol/insta_logo.png'
+// @ts-expect-error TS(2307): Cannot find module './images/symbol/x_logo.png' o... Remove this comment to see the full error message
+import XImage from './images/symbol/x_logo.png'
 import Button from 'react-bootstrap/Button'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -19,9 +19,12 @@ function ContactInfo() {
                 &nbsp;
                 Us
             </h1>
-            <p className='text-center' >
+            <p className='text-center' style={{
+                maxWidth:'85%',
+                alignContent: 'center',
+                margin: 'auto'}}>
                 新歓練習・イベントに参加希望の方は
-                twitter, InstagramのDMからご連絡の方お待ちしております。
+                X, InstagramのDMからご連絡の方お待ちしております。
             </p>
         </div>
     )
@@ -30,8 +33,8 @@ function ContactInfo() {
 function ContactDetails() {
     const media = [
         {title: "東大BESTER新歓2024",
-        id: 'twitter',
-        src: TwitterImage,
+        id: 'X',
+        src: XImage,
         url: "https://twitter.com/Bester_2024",
         },
         {title: "東大BESTER新歓2024",
@@ -53,7 +56,7 @@ function ContactDetails() {
           }}>
             <div className='col py-4'>
                 <img className='img-fluid' src={item.src} alt='' style={{
-                    width: '100px',
+                    width: '80px',
                     justifyContent: 'center'
                 }}/>
             </div>
