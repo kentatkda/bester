@@ -19,15 +19,15 @@ function Footer() {
         style={{
           fontWeight: '500',
           marginBottom: '20px',
-        }}>BESTER</b></h2> 
+        }}>BESTER</b></h2>
         <h6 style={{
           paddingTop: '0',
           margin: '0',
-          fontsize: '10px'
-        }}> Inter-College Tennis Circle of Tokyo Univ / Japan Women Univ / OChanomizu Univ. </h6>
+          fontSize: '12px'
+        }}> Inter-College Tennis Circle of Tokyo Univ / Japan Women Univ / Ochanomizu Univ. </h6>
         <h6 style={{
           marginBottom: '0',
-          fontsize: '10px'
+          fontSize: '12px'
         }}> © 2024 Beseter. All rights reserved. </h6>
     </div>
   )

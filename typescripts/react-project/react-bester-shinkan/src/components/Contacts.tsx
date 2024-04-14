@@ -1,17 +1,15 @@
 import React from 'react'
-import  InstaImage from './images/symbol/instagram.png'
-import  TwitterImage from './images/symbol/twitter.png'
-import Header from './Header'
+// @ts-expect-error TS(2307): Cannot find module './images/symbol/insta_logo.png'... Remove this comment to see the full error message
+import  InstaImage from './images/symbol/insta_logo.png'
+// @ts-expect-error TS(2307): Cannot find module './images/symbol/x_logo.png' o... Remove this comment to see the full error message
+import XImage from './images/symbol/x_logo.png'
 import Button from 'react-bootstrap/Button'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Footer from './Footer';
 
 function ContactInfo() {
     return (
-        <div className="container d-flex flex-column justify-content-center text-align-center"
-        style={{
-            margin: 'auto',
-        }}>
+        <div className="d-flex flex-column justify-content-center text-align-center"
+        >
             <h1 className='mb-3 d-flex text-uppercase fw-bold justify-content-center' 
             style={{
             }}>
@@ -19,42 +17,45 @@ function ContactInfo() {
                 &nbsp;
                 Us
             </h1>
-            <p className='text-center' >
-                興味を持っていただいてありがとうございます！
-                新歓練習・イベントに参加希望の方は
-                Twitter, InstagramのDMからご連絡の方お待ちしております。
+            <p className='text-center' style={{
+                maxWidth:'85%',
+                alignContent: 'center',
+                fontSize: '16px',
+                margin: 'auto'}}>
+                新歓練習・イベントに参加希望や相談事のある方は
+                X, InstagramのDMからご連絡の方お待ちしております。
             </p>
-            {/* <h3>Opening Hours</h3>
-            <p className="m-0">Mon - Fri: 09:00 - 17:00</p>
-            <p>Sat - Sun: 10:00 - 15:00</p> */}
         </div>
     )
 }
 
-function ContactsDesc() {
+function ContactDetails() {
     const media = [
         {title: "東大BESTER新歓2024",
-        src: TwitterImage,
+        id: 'X',
+        src: XImage,
         url: "https://twitter.com/Bester_2024",
         },
         {title: "東大BESTER新歓2024",
+        id: "instagram",
         src: InstaImage,
         url: "https://www.instagram.com/bester_2024",
         },
     ]
     
     const FollowButtons = media.map((item) => 
-        <div className='container py-2 justify-content-space-around text-align-center'
+        <div className='py-2 justify-content-space-around text-align-center'
+        key={item.id}
         style={{
             // width: '70%',
             margin: 'auto',
             marginBottom: '10vh',
             alignContent: 'center',
-            textAlign: 'center'
-          }}>
+            textAlign: 'center',
+        }}>
             <div className='col py-4'>
                 <img className='img-fluid' src={item.src} alt='' style={{
-                    width: '100px',
+                    width: '80px',
                     justifyContent: 'center'
                 }}/>
             </div>
@@ -78,20 +79,30 @@ function ContactsDesc() {
             <div className='container py-5 justify-content-space-between '
             style={{
                 marginTop: '25vh',
-                width: '80%'
+                width: '90%'
             }}>
-                <div className='row' style={{
+                <div className='text-center' style={{
                     justifyContent: 'center',
-                    margin: 'auto'
+                    alignContent: 'center',
+                    margin: 'auto',
+                    marginTop:'20px',
                 }}>
-                    <div className='col-md-5 d-flex flex-column mb-5 mb-lg-2'
+                    <div className='row d-flex'>
+                        <div className='col-md-5 '
                         style={{
-                        marginTop: '20px',
+                            justifyContent: 'center',
+                            alignContent: 'center',
+                            margin: 'auto'
                         }}>
-                            <ContactInfo/>
-                    </div>
-                    <div className='col-md-6 d-flex justify-content-center text-align-center'>
-                        {FollowButtons}
+                                <ContactInfo/>
+                        </div>
+                        <div className='col-md-6 text-center'
+                        style={{
+                            display: 'flex'
+                        }}
+                        >
+                            {FollowButtons}
+                        </div>
                     </div>
                 </div>
             </div>
@@ -99,16 +110,5 @@ function ContactsDesc() {
     )
 }
 
-function Contacts() {
-    return (
-        <div>
-            <Header/>
-            <ContactsDesc/>
-            <Footer/>
-        </div>
-    )
-}
 
-export {Contacts, ContactsDesc}
-
-export default Contacts;
+export default ContactDetails;

@@ -1,49 +1,30 @@
 import React from 'react'
+// @ts-expect-error TS(2307): Cannot find module './images/home/Calendar.jpg' or... Remove this comment to see the full error message
 import Calendar from './images/home/Calendar.jpg'
 import Button from 'react-bootstrap/Button';
 import { Link } from 'react-router-dom';
-import ShinkanJoinButton  from './ShinkanJoinButton';
- 
+import ModalComponent from './ModalComponent.tsx';
+
 const ButtonComponent = () => {
 
-  return (
+    return (
     <div className='container '>
-        <div className='row'
-        style={{
+        <div className="text-center" style={{
             justifyContent: 'center',
             alignContent: 'center',
             margin: 'auto',
-            marginTop: '15vh',
+            marginTop: '40px',
+            display: 'flex'
         }}>
-            <div className='col-5 text-center my-2 mx-1'
-            style={{
-                textAlign: 'center',
-                justifyContent: 'center',
-                margin :'auto',
-                marginTop: '50px',
-            }}>
-                <Link to="/shinkan">
-                    <Button variant="warning">詳しく見る →</Button>
-                </Link>
-            </div>
-            <div className='col-5 text-center my-2 mx-1' style={{
-                justifyContent: 'center',
-                margin: 'auto'
-            }}>
-                <ShinkanJoinButton/>
-            </div>
+            <Link to="/shinkan">
+                <Button variant="warning">詳しく見る →</Button>
+            </Link>
+            <ModalComponent fontSize={'16px'} />
         </div>
   </div>
   )
 };
 
-const CalendarSlides = () => {
-    return (
-        <div className='d-flex justify-content-center'>
-            <img className='img-fluid border border-3 border-dark' src={Calendar} alt="" style={{maxHeight: '300px', objectFit: 'cover'}}/>
-        </div>
-    )
-}
 
 
 
@@ -60,15 +41,20 @@ function JoinUs() {
             style={{
             marginBottom: '10vh'
             }}>
-                <div className='row'>
+                <div className='row' style={{
+                    width: '90%',
+                    justifyContent: 'center',
+                    alignContent: 'center',
+                    margin: 'auto'
+                }}>
                     <div className='col-md-6 d-flex justify-content-center'>
-                        {/* <CalendarComponent/> */}
-                        {/* <img src={CalendarImg} className='img-fluid width-60 ' alt="" /> */}
-                        <CalendarSlides/>
+                        <div className='d-flex justify-content-center'>
+                            <img className='img-fluid border border-3 border-dark' src={Calendar} alt="" style={{maxHeight: '300px', objectFit: 'cover'}}/>
+                        </div>
                     </div>
                     <div className='col-md-5 d-flex flex-column align-items-center justify-content-center mb-5 mb-lg-2'
                     style={{
-                        maxWidth: '80%',
+                        // maxWidth: '80%',
                         justifyContent: 'center',
                         margin: 'auto',
                         marginTop: '20px',
@@ -77,7 +63,11 @@ function JoinUs() {
                         一度、練習やイベント・合宿に参加してBESTERの雰囲気を味わってみませんか？
                         今年の新歓日程はカレンダーの通りです。是非一度遊びに来てください！
                         </div>
-                        <ButtonComponent/>
+                        <div style={{
+                            maxWidth: '300px'
+                        }}>
+                            <ButtonComponent/>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -85,6 +75,5 @@ function JoinUs() {
 )
 }
 
-export { CalendarSlides }
 
 export default JoinUs
