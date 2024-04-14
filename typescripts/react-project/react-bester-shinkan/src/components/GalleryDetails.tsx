@@ -44,6 +44,9 @@ import hanabi3 from './images/gallery/hanabi3.jpg'
 import pink from './images/gallery/pink.jpg'
 // @ts-expect-error TS(2307): Cannot find module './images/gallery/hanabi4.jpg' ... Remove this comment to see the full error message
 import hanabi4 from './images/gallery/hanabi4.jpg'
+// @ts-expect-error TS(2307): Cannot find module './images/gallery/jump.jpg' ... Remove this comment to see the full error message
+import jump from './images/gallery/jump.jpg'
+
 
 // @ts-expect-error TS(2307): Cannot find module './images/gallery/hanabi1.jpg' ... Remove this comment to see the full error message
 import hanabi1 from './images/gallery/hanabi1.jpg'
@@ -58,8 +61,8 @@ import yui from './images/gallery/yui.jpg'
 import fuji from './images/gallery/fuji.JPG'
 // @ts-expect-error TS(2307): Cannot find module './images/gallery/kotomi.jpg' o... Remove this comment to see the full error message
 import kotomi from './images/gallery/kotomi.jpg'
-// @ts-expect-error TS(2307): Cannot find module './images/gallery/fifth.jpg' o... Remove this comment to see the full error message
-import fifth from './images/gallery/fifth.jpg'
+// // @ts-expect-error TS(2307): Cannot find module './images/gallery/fifth.jpg' o... Remove this comment to see the full error message
+// import fifth from './images/gallery/fifth.jpg'
 const GalleryDetailsHeader = () => {
     return (
         <h1 className='mb-3 d-flex text-uppercase fw-bold text-align-center justify-content-center' 
@@ -97,7 +100,7 @@ export default function GalleryDetails() {
         src6: disney,
         src7: tennis5,
         src8: kotomi,
-        src9: fifth
+        src9: jump
         },
         {
         row: 'third',
