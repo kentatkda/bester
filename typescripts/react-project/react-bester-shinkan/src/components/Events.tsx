@@ -59,7 +59,7 @@ function Events() {
             }}>
                 <div className='row'
                 style={{
-                width: '90%',
+                // width: '90%',
                 justifyContent: 'center',
                 textAlign: 'center',
                 margin: 'auto',
@@ -69,8 +69,10 @@ function Events() {
                     </div>
                     <div className='col-lg-6 d-flex flex-column align-items-center justify-content-center mb-5 text-dark'
                     style={{
+                        maxWidth: '500px',
+                        alignContent: 'center',
+                        margin: 'auto',
                         marginTop: '20px',
-                        maxWidth: '550px'
                     }}>
                         <div>
                             べスターでは月に1回ほどでイベントを開催しています。

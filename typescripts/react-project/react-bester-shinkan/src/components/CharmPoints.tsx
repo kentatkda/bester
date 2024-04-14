@@ -28,7 +28,7 @@ export default function CharmPoints() {
   ]
 
   const PointCards = data.map((item) =>
-  <div className="col-lg-4 col-sm-6 col-xs-6 px-2 " key={item.id}>
+  <div className="col-lg-4 col-sm-6 px-2 " key={item.id}>
       <div className="my-3" 
       style={{
         overflow:'hidden',

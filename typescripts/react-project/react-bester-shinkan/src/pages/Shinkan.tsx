@@ -28,7 +28,7 @@ function Shinkan() {
           alignContent: 'center',
           margin: 'auto'
         }}>
-          <ModalComponent/>
+          <ModalComponent fontSize={'25px'}/>
         </div>
       </motion.div>
       <motion.div

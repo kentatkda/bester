@@ -22,7 +22,7 @@ function ShinkanDescription () {
     },
     {title: "食事会",
     src:MealImg,
-    desc:"食事会は週１回開かれます。先輩や新入生と話す中で、BESTERの雰囲気を体感することができるのではないでしょうか？さらになんと！新入生は新歓時期特別価格700円程で飲み食いすることができます。すぐ定員に達してしまうので興味のある人はフォーム提出を急げ！！"
+    desc:"食事会は週１回開かれます。先輩や新入生と話す中で、BESTERの雰囲気を体感することができるのではないでしょうか？すぐ定員に達してしまうので興味のある人はフォーム提出を急げ！！"
     },
     {title: "一年会",
     src:IchinenImg,
@@ -142,7 +142,7 @@ function ShinkanHeader () {
                 あなたもきっとBESTERを好きになるはず..！
                 連絡お待ちしています！
               </p>
-              <ModalComponent/>
+              <ModalComponent fontSize={'16px'}/>
           </div>
         </div>
       </motion.div>

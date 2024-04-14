@@ -9,31 +9,17 @@ const ButtonComponent = () => {
 
     return (
     <div className='container '>
-        <div className="row" style={{
+        <div className="text-center" style={{
             justifyContent: 'center',
             alignContent: 'center',
             margin: 'auto',
+            marginTop: '40px',
+            display: 'flex'
         }}>
-            <div className='col-lg-3 col-sm-6 text-center'
-            style={{
-                textAlign: 'center',
-                justifyContent: 'center',
-                margin :'auto',
-                marginTop: '40px',
-            }}>
-                <Link to="/shinkan">
-                    <Button variant="warning">詳しく見る →</Button>
-                </Link>
-            </div>
-            <div className='col-lg-3  col-sm-6 text-center'
-            style={{
-                textAlign: 'center',
-                justifyContent: 'center',
-                margin :'auto',
-                marginTop: '40px',
-            }}>
-                <ModalComponent/>
-            </div>
+            <Link to="/shinkan">
+                <Button variant="warning">詳しく見る →</Button>
+            </Link>
+            <ModalComponent fontSize={'16px'} />
         </div>
   </div>
   )
@@ -68,7 +54,7 @@ function JoinUs() {
                     </div>
                     <div className='col-md-5 d-flex flex-column align-items-center justify-content-center mb-5 mb-lg-2'
                     style={{
-                        maxWidth: '80%',
+                        // maxWidth: '80%',
                         justifyContent: 'center',
                         margin: 'auto',
                         marginTop: '20px',

@@ -2,7 +2,7 @@ import React from 'react'
 import Button from 'react-bootstrap/Button'
 // import { Link } from 'react-router-dom';
 import Modal from 'react-modal'
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './ModalComponent.css'
 import CloseIcon from '@mui/icons-material/Close';
 // import XIcon from '@mui/icons-material/X';
@@ -31,8 +31,14 @@ const customStyles = {
 };
 
 
-function ModalComponent() {
+function ModalComponent({ fontSize }) {
   const [editModalIsOpen, setEditModalIsOpen] = useState(false);
+
+  useEffect(() => {
+    // モーダルが開かれる前にApp要素を設定する
+    Modal.setAppElement('#root'); // ここでは、#rootがAppの要素だと仮定しています。適切な要素を指定してください。
+  }, []);
+
 
   return (
     <div className='container' style={{
@@ -47,6 +53,7 @@ function ModalComponent() {
           setEditModalIsOpen(true);
           console.log('modal is opened.')
         }}
+        style={{fontSize: fontSize}}
       >
         新歓に参加 →
       </Button>
@@ -96,7 +103,7 @@ function ModalComponent() {
               </div>
             </a>
           </div>
-          <div className='container' style={{backgroundColor: 'rgba(255, 165, 0, 0.8)', marginTop: '20px'}}>
+          <div id="close" className='container' style={{backgroundColor: 'rgba(255, 165, 0, 0.8)', marginTop: '20px'}}>
             <div className='row d-flex py-1'
             style={{display:'flex'}}
             onClick={() => {

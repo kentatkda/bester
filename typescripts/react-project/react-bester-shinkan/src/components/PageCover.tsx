@@ -1,28 +1,24 @@
 import React from 'react'
 // @ts-expect-error TS(2307): Cannot find module './images/home/BackImg.jpg' or ... Remove this comment to see the full error message
 import BackImg from './images/home/BackImg.jpg'
+import './PageCover.css'
 
 const PageCoverText = () => {
     return(
         <div className='container px-2 py-4' style={{
             marginTop: '45vh'
         }}>
-            <h2 className='col-md-5 fw-bold text-warning' style={{
-                fontSize: '50px'
-            }}>
+            <h2 id='title' className='fw-bold text-warning'>
                 BESTER
             </h2>
-            <h5 className='col-md-7 col-sm-9 col-xs-9 text-white' style={{
-                maxWidth: '85%',
-                fontSize: '15px'
+            <h5 id='caption' className='text-white' style={{
+                maxWidth: '70%',
             }}>
                 東京大学/日本女子大学/御茶ノ水女子大学のインカレテニスサークル
             </h5>
-            <h3 className='col-md-7 col-sm-9 col-xs-9 text-white' style={{
-                fontSize: '24px'
-            }}>
+            <h4 id='catch-copy' className='text-white'>
                 最後の青春時代を私たちとともに。
-            </h3>
+            </h4>
         </div>
     )
 }

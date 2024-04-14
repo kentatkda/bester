@@ -14,3 +14,11 @@
 #modal-insta:hover {
   opacity: .5;
 }
+
+#close {
+  transition: background-color 0.3s ease;
+}
+
+#close:hover {
+  opacity: .5;
+}

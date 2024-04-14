@@ -32,7 +32,7 @@ const App = () => {
   return (
     <div className="App">
       <AnimatePresence mode="wait">
-      <ScrollToTop/>
+        <ScrollToTop/>
         <Routes location={ location } key={location.pathname}>
           <Route path="/" element={ <Home /> }/>
           <Route path="/events" element={ <Events /> } />

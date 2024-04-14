@@ -44,7 +44,7 @@ function AboutBester() {
           <div className='col-lg-5 my-3 d-flex flex-column align-items-center justify-content-center mb-2 '
           style={{
             margin: 'auto',
-            maxWidth: '90%',
+            // maxWidth: '90%',
             textAlign: 'center',
             marginTop: '20px',
           }}>
@@ -57,7 +57,7 @@ function AboutBester() {
               <div className='btn' style={{
                 marginTop: '20px'
               }}>
-                <ModalComponent/>
+                <ModalComponent fontSize={'16px'}/>
               </div>
           </div>
         </div>

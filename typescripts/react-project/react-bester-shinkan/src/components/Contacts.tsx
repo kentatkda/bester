@@ -9,9 +9,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function ContactInfo() {
     return (
         <div className="d-flex flex-column justify-content-center text-align-center"
-        style={{
-            margin: 'auto',
-        }}>
+        >
             <h1 className='mb-3 d-flex text-uppercase fw-bold justify-content-center' 
             style={{
             }}>
@@ -22,8 +20,9 @@ function ContactInfo() {
             <p className='text-center' style={{
                 maxWidth:'85%',
                 alignContent: 'center',
+                fontSize: '16px',
                 margin: 'auto'}}>
-                新歓練習・イベントに参加希望の方は
+                新歓練習・イベントに参加希望や相談事のある方は
                 X, InstagramのDMからご連絡の方お待ちしております。
             </p>
         </div>
@@ -45,15 +44,15 @@ function ContactDetails() {
     ]
     
     const FollowButtons = media.map((item) => 
-        <div className='container py-2 justify-content-space-around text-align-center'
+        <div className='py-2 justify-content-space-around text-align-center'
         key={item.id}
         style={{
             // width: '70%',
             margin: 'auto',
             marginBottom: '10vh',
             alignContent: 'center',
-            textAlign: 'center'
-          }}>
+            textAlign: 'center',
+        }}>
             <div className='col py-4'>
                 <img className='img-fluid' src={item.src} alt='' style={{
                     width: '80px',
@@ -82,22 +81,28 @@ function ContactDetails() {
                 marginTop: '25vh',
                 width: '90%'
             }}>
-                <div className='row' style={{
+                <div className='text-center' style={{
                     justifyContent: 'center',
-                    margin: 'auto'
+                    alignContent: 'center',
+                    margin: 'auto',
+                    marginTop:'20px',
                 }}>
-                    <div className='col-md-5 d-flex flex-column mb-5 mb-lg-2'
+                    <div className='row d-flex'>
+                        <div className='col-md-5 '
                         style={{
-                        marginTop: '20px',
+                            justifyContent: 'center',
+                            alignContent: 'center',
+                            margin: 'auto'
                         }}>
-                            <ContactInfo/>
-                    </div>
-                    <div className='col-md-6 d-flex justify-content-center text-center'
-                    style={{
-                        justifyContent: 'center',
-                        alignContent: 'space-between'
-                    }}>
-                        {FollowButtons}
+                                <ContactInfo/>
+                        </div>
+                        <div className='col-md-6 text-center'
+                        style={{
+                            display: 'flex'
+                        }}
+                        >
+                            {FollowButtons}
+                        </div>
                     </div>
                 </div>
             </div>
