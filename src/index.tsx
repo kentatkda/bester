@@ -5,10 +5,11 @@ import './index.css';
 // @ts-expect-error TS(6142): Module './App' was resolved to 'C:/Users/MEIP-user... Remove this comment to see the full error message
 import App from './App.tsx';
 import 'bootstrap/dist/css/bootstrap.min.css';
+//basename={import.meta.env.DEV ? "/" : "/bester/"}
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode basename={import.meta.env.DEV ? "/" : "/bester/"}>
+  <React.StrictMode> 
     <Router>
       <App />
     </Router>
