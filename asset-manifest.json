@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/bester/static/css/main.b4ca0e7f.css",
-    "main.js": "/bester/static/js/main.6e551bb8.js",
+    "main.js": "/bester/static/js/main.4cf67d81.js",
     "static/media/insta_logo.png": "/bester/static/media/insta_logo.469cb83ec463191dffdf.png",
     "static/media/ShinkanIchinenImg.jpg": "/bester/static/media/ShinkanIchinenImg.8fab156f5b44fd55d334.jpg",
     "static/media/tennis3.JPG": "/bester/static/media/tennis3.5c9494606ad2c534da10.JPG",
@@ -54,10 +54,10 @@
     "static/media/danjyo.png": "/bester/static/media/danjyo.3788807e2224d67d43fe.png",
     "index.html": "/bester/index.html",
     "main.b4ca0e7f.css.map": "/bester/static/css/main.b4ca0e7f.css.map",
-    "main.6e551bb8.js.map": "/bester/static/js/main.6e551bb8.js.map"
+    "main.4cf67d81.js.map": "/bester/static/js/main.4cf67d81.js.map"
   },
   "entrypoints": [
     "static/css/main.b4ca0e7f.css",
-    "static/js/main.6e551bb8.js"
+    "static/js/main.4cf67d81.js"
   ]
 }
