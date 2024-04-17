@@ -7,7 +7,6 @@ const APP_NAME: String = "bester";
 
 const Header = () => {
   return (
-    // @ts-expect-error TS(17004): Cannot use JSX unless the '--jsx' flag is provided... Remove this comment to see the full error message
     <Navbar expand="lg" className='fixed-top border-0  shadow-lg'
     style={{
         minHeight: '100px',
@@ -18,7 +17,7 @@ const Header = () => {
     }}>
         <Container>
             <Navbar.Brand>
-                <Link to="/" className='navbar-brand fw-bold text-warning'
+                <Link to="/bester/" className='navbar-brand fw-bold text-warning'
                 style={{
                     fontSize: '100'
                 }}>
