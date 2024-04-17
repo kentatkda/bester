@@ -47,14 +47,14 @@ function JoinUs() {
                     alignContent: 'center',
                     margin: 'auto'
                 }}>
-                    <div className='col-md-6 d-flex justify-content-center'>
+                    <div className='col-lg-6 d-flex justify-content-center'>
                         <div className='d-flex justify-content-center'>
                             <img className='img-fluid border border-3 border-dark' src={Calendar} alt="" style={{maxHeight: '300px', objectFit: 'cover'}}/>
                         </div>
                     </div>
-                    <div className='col-md-5 d-flex flex-column align-items-center justify-content-center mb-5 mb-lg-2'
+                    <div className='col-lg-5 d-flex flex-column align-items-center justify-content-center mb-5 mb-lg-2'
                     style={{
-                        // maxWidth: '80%',
+                        maxWidth: '500px',
                         justifyContent: 'center',
                         margin: 'auto',
                         marginTop: '20px',

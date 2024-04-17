@@ -59,22 +59,24 @@ function Events() {
             }}>
                 <div className='row'
                 style={{
-                // width: '90%',
+                width: '90%',
                 justifyContent: 'center',
                 textAlign: 'center',
+                alignContent: 'center',
                 margin: 'auto',
                 }}>
                     <div className='col-lg-6 d-flex justify-content-center'>
                         <ImagesSlide/>
                     </div>
-                    <div className='col-lg-6 d-flex flex-column align-items-center justify-content-center mb-5 text-dark'
+                    <div className='col-lg-5 d-flex flex-column align-items-center justify-content-center mb-5 text-dark'
                     style={{
                         maxWidth: '500px',
                         alignContent: 'center',
+                        justifyContent: 'center',
                         margin: 'auto',
                         marginTop: '20px',
                     }}>
-                        <div>
+                        <div className='text-center'>
                             べスターでは月に1回ほどでイベントを開催しています。
                             BBQ / 花火大会 / クリスマスパーティなど季節感のあるイベント盛りだくさんで盛り上がること間違いなし！
                             アットホームな雰囲気が特徴です！
@@ -83,7 +85,6 @@ function Events() {
                             maxWidth: '300px',
                             justifyContent: 'center',
                             alignContent: 'center',
-                            margin: 'auto'
                         }}>
                             <ButtonComponent/>
                         </div>
