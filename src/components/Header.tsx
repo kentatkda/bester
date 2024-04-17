@@ -30,11 +30,11 @@ const Header = () => {
             }}/>
             <Navbar.Collapse id='basic-navbar-nav'>
             <Nav className='me-auto justify-content-end w-100 '>
-                <NavLink to="/" className='navigation-link text-black bg-transparent fw-bold'>home</NavLink>
-                <NavLink to="/gallery" className='navigation-link text-black bg-transparent fw-bold'>gallery</NavLink>
-                <NavLink to= "/events" className='navigation-link text-black bg-transparent fw-bold'>events</NavLink>
-                <NavLink to="/shinkan" className='navigation-link text-black bg-transparent fw-bold'>shinkan</NavLink>
-                <NavLink to="/contacts" className='navigation-link text-black bg-transparent fw-bold'>contacts</NavLink>
+                <NavLink to="/bester/" className='navigation-link text-black bg-transparent fw-bold'>home</NavLink>
+                <NavLink to="/bester/gallery" className='navigation-link text-black bg-transparent fw-bold'>gallery</NavLink>
+                <NavLink to= "/bester/events" className='navigation-link text-black bg-transparent fw-bold'>events</NavLink>
+                <NavLink to="/bester/shinkan" className='navigation-link text-black bg-transparent fw-bold'>shinkan</NavLink>
+                <NavLink to="/bester/contacts" className='navigation-link text-black bg-transparent fw-bold'>contacts</NavLink>
             </Nav>
             </Navbar.Collapse>
         </Container>
