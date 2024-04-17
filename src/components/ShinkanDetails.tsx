@@ -130,9 +130,9 @@ function ShinkanHeader () {
             marginRight: 'auto',
             marginBottom: '40px'
           }}>
-              <h2 className="fs-1 mb-3 text-uppercase fw-bold text-center justify-content-center"style={{marginTop: '50px'}}> Shinkan  <p className='text-warning'>Info</p> </h2>
+              <h2 className="fs-1 mb-3 text-uppercase fw-bold text-center justify-content-center"style={{marginBottom: '50px'}}> Shinkan  <p className='text-warning'>Info</p> </h2>
               <p className="mb-3" style={{
-                // maxWidth: '90%',
+                maxWidth: '450px',
                 textAlign: 'center',
                 fontSize: '16px',
                 margin: 'auto'

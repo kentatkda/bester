@@ -20,7 +20,6 @@ const Header = () => {
                 style={{
                     fontSize: '100'
                 }}>
-                    {/* <img src={Logo} alt=''/> */}
                     BESTER
                 </Link>
             </Navbar.Brand>
@@ -31,11 +30,11 @@ const Header = () => {
             }}/>
             <Navbar.Collapse id='basic-navbar-nav'>
             <Nav className='me-auto justify-content-end w-100 '>
-                <Nav.Link href="/" className='navigation-link text-black bg-transparent fw-bold'>home</Nav.Link>
-                <Nav.Link href="/gallery" className='navigation-link text-black bg-transparent fw-bold'>gallery</Nav.Link>
-                <Nav.Link href= "/events" className='navigation-link text-black bg-transparent fw-bold'>events</Nav.Link>
-                <Nav.Link href="/shinkan" className='navigation-link text-black bg-transparent fw-bold'>shinkan</Nav.Link>
-                <Nav.Link href="/contacts" className='navigation-link text-black bg-transparent fw-bold'>contacts</Nav.Link>
+                <NavLink to="/" className='navigation-link text-black bg-transparent fw-bold'>home</NavLink>
+                <NavLink to="/gallery" className='navigation-link text-black bg-transparent fw-bold'>gallery</NavLink>
+                <NavLink to= "/events" className='navigation-link text-black bg-transparent fw-bold'>events</NavLink>
+                <NavLink to="/shinkan" className='navigation-link text-black bg-transparent fw-bold'>shinkan</NavLink>
+                <NavLink to="/contacts" className='navigation-link text-black bg-transparent fw-bold'>contacts</NavLink>
             </Nav>
             </Navbar.Collapse>
         </Container>
