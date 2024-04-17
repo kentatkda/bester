@@ -58,7 +58,7 @@ export default function Gallery() {
         </div>
         <div className='text-center fs-1 mb-5 text-uppercase fw-bold z-index-10'
         style={{marginTop: '50px'}}>
-            <Link to='/gallery'>
+            <Link to='/bester/gallery'>
                 <Button variant="warning">
                     詳しく見る →
                 </Button>

@@ -16,7 +16,7 @@ const ButtonComponent = () => {
             marginTop: '40px',
             display: 'flex'
         }}>
-            <Link to="/shinkan">
+            <Link to="/bester/shinkan">
                 <Button variant="warning">詳しく見る →</Button>
             </Link>
             <ModalComponent fontSize={'16px'} />

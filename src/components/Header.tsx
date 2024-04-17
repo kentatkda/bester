@@ -22,7 +22,7 @@ const Header = () => {
     }}>
         <Container>
             <Navbar.Brand>
-                <Link to="/" className='navbar-brand fw-bold text-warning'
+                <Link to="/bester" className='navbar-brand fw-bold text-warning'
                 style={{
                     fontSize: '100'
                 }}>

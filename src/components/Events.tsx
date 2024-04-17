@@ -23,7 +23,7 @@ const ButtonComponent = () => {
                 margin :'auto',
                 marginTop: '40px',
             }}>
-                <Link to="/events">
+                <Link to="/bester/events">
                     <Button variant="warning">詳しく見る →</Button>
                 </Link>
             </div>
