@@ -2,7 +2,6 @@ import React from 'react'
 import  {Link} from "react-router-dom"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Nav, Navbar } from 'react-bootstrap'
-// import Logo from './images/symbol/tennis.png'
 const APP_NAME: String = "bester";
 
 const Header = () => {
@@ -17,7 +16,7 @@ const Header = () => {
     }}>
         <Container>
             <Navbar.Brand>
-                <Link to="/bester/" className='navbar-brand fw-bold text-warning'
+                <Link to={APP_NAME + "/"} className='navbar-brand fw-bold text-warning'
                 style={{
                     fontSize: '100'
                 }}>
@@ -33,7 +32,7 @@ const Header = () => {
             <Navbar.Collapse id='basic-navbar-nav'>
             <Nav className='me-auto justify-content-end w-100 '>
                 <Nav.Link href={APP_NAME + "/"} className='navigation-link text-black bg-transparent fw-bold'>home</Nav.Link>
-                <Nav.Link href={APP_NAME + "/gallery"} className='navigation-link text-black bg-transparent fw-bold'>gallery</Nav.Link>
+                <Nav.Link href="/gallery" className='navigation-link text-black bg-transparent fw-bold'>gallery</Nav.Link>
                 <Nav.Link href={APP_NAME + "/events"} className='navigation-link text-black bg-transparent fw-bold'>events</Nav.Link>
                 <Nav.Link href={APP_NAME + "/shinkan"} className='navigation-link text-black bg-transparent fw-bold'>shinkan</Nav.Link>
                 <Nav.Link href={APP_NAME + "/contacts"} className='navigation-link text-black bg-transparent fw-bold'>contacts</Nav.Link>
