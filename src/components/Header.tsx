@@ -3,6 +3,13 @@ import  { Link, NavLink } from "react-router-dom"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Nav, Navbar } from 'react-bootstrap'
 
+const Link = ({ name, link }: any) => {
+    return <div className="menu">
+      <a href={link}>{name}</a>
+    </div>
+  }
+
+const APP_NAME = "bester"
 
 const Header = () => {
   return (
@@ -30,11 +37,11 @@ const Header = () => {
             }}/>
             <Navbar.Collapse id='basic-navbar-nav'>
             <Nav className='me-auto justify-content-end w-100 '>
-                <NavLink to="/bester" className='navigation-link text-black bg-transparent fw-bold'>home</NavLink>
-                <NavLink to="/bester/gallery" className='navigation-link text-black bg-transparent fw-bold'>gallery</NavLink>
-                <NavLink to="/bester/events" className='navigation-link text-black bg-transparent fw-bold'>events</NavLink>
-                <NavLink to="/bester/shinkan" className='navigation-link text-black bg-transparent fw-bold'>shinkan</NavLink>
-                <NavLink to="/bester/contacts" className='navigation-link text-black bg-transparent fw-bold'>contacts</NavLink>
+                <Link name="home" className='navigation-link text-black bg-transparent fw-bold' link={'/' + APP_NAME } />
+                <Link name="gallery" className='navigation-link text-black bg-transparent fw-bold' link={'/' + APP_NAME + '/gallery'} />
+                <Link name="events" className='navigation-link text-black bg-transparent fw-bold' link={'/' + APP_NAME + '/events'} />
+                <Link name="shinkan" className='navigation-link text-black bg-transparent fw-bold' link={'/' + APP_NAME + 'shinkan'} />
+                <Link name="contacts" className='navigation-link text-black bg-transparent fw-bold' link={'/' + APP_NAME + 'contacts'} />
             </Nav>
             </Navbar.Collapse>
         </Container>
