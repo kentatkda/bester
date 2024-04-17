@@ -20,7 +20,6 @@ function ContactInfo() {
             <p className='text-center' style={{
                 maxWidth:'85%',
                 alignContent: 'center',
-                fontSize: '16px',
                 margin: 'auto'}}>
                 新歓練習・イベントに参加希望や相談事のある方は
                 X, InstagramのDMからご連絡の方お待ちしております。
