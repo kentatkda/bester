@@ -31,11 +31,11 @@ const Header = () => {
             }}/>
             <Navbar.Collapse id='basic-navbar-nav'>
             <Nav className='me-auto justify-content-end w-100 '>
-                <Nav.Link href={APP_NAME + "/"} className='navigation-link text-black bg-transparent fw-bold'>home</Nav.Link>
-                <Nav.Link href={APP_NAME + "/gallery"} className='navigation-link text-black bg-transparent fw-bold'>gallery</Nav.Link>
-                <Nav.Link href={APP_NAME + "/events"} className='navigation-link text-black bg-transparent fw-bold'>events</Nav.Link>
-                <Nav.Link href={APP_NAME + "/shinkan"} className='navigation-link text-black bg-transparent fw-bold'>shinkan</Nav.Link>
-                <Nav.Link href={APP_NAME + "/contacts"} className='navigation-link text-black bg-transparent fw-bold'>contacts</Nav.Link>
+                <Nav.Link href="/" className='navigation-link text-black bg-transparent fw-bold'>home</Nav.Link>
+                <Nav.Link href="/gallery" className='navigation-link text-black bg-transparent fw-bold'>gallery</Nav.Link>
+                <Nav.Link href= "/events" className='navigation-link text-black bg-transparent fw-bold'>events</Nav.Link>
+                <Nav.Link href="/shinkan" className='navigation-link text-black bg-transparent fw-bold'>shinkan</Nav.Link>
+                <Nav.Link href="/contacts" className='navigation-link text-black bg-transparent fw-bold'>contacts</Nav.Link>
             </Nav>
             </Navbar.Collapse>
         </Container>
