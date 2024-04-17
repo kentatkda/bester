@@ -41,7 +41,7 @@ function ShowBackImg() {
             objectFit: 'cover',
             zIndex: '-10'
         }}/>
-          {/* <div class="overlay"></div> */}
+        {console.log(process.env.PUBLIC_URL)}
     </div>
     )
 }
