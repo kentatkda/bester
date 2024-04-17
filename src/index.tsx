@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { HashRouter as Router } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 import './index.css';
 // @ts-expect-error TS(6142): Module './App' was resolved to 'C:/Users/MEIP-user... Remove this comment to see the full error message
 import App from './App.tsx';
