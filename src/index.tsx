@@ -16,34 +16,3 @@ root.render(
   </React.StrictMode>
 );
 
-
-// function Layout()  {
-//   return (
-//     <div>
-//       {/* { children } */}
-//       <Home/>
-//       <ScrollRestoration />
-//     </div>
-//   );
-// };
-
-// const router = createBrowserRouter([
-//   {
-//     path: '/',
-//     element: <Layout />,
-//     children: [
-//       // { index: true, element: <EventsDetails /> },
-//       { path: '/', element: <Home /> },
-//       { path: '/events', element: <EventsDetails /> },
-//       { path: '/shinkan', element: <Shinkan /> },
-//       { path: '/gallery', element: <GalleryDetails /> },
-//       { path: '/contacts', element: <Contacts /> },
-//     ],
-//   },
-// ]);
-
-// ReactDOM.createRoot(document.getElementById("root")).render(
-//   <React.StrictMode>
-//     <BrowserRouter router={router} />
-//   </React.StrictMode>
-// );
