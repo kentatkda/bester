@@ -115,7 +115,11 @@ function EventsDetails() {
                         // borderBottomColor: 'rgba(255, 187, 0, 0.8)',
                         borderBottomWidth: '3px'
                     }}>{item.title}</b>
-                    <div className='py-2 px-1'>
+                    <div className='py-2 px-1 text-center' style={{
+                        justifyContent: 'center',
+                        alignContent: 'center',
+                        margin: 'auto'
+                    }}>
                     {item.desc}
                     </div>
                 </div>
