@@ -12,7 +12,6 @@ import Gallery from './pages/Gallery.tsx';
 import { useEffect } from 'react';
 import './style.css';
 import { AnimatePresence } from 'framer-motion'
-const APP_NAME: String = "bester";
 
 const ScrollToTop = () => {
   const { pathname } = useLocation()
