@@ -16,7 +16,7 @@ const Header = () => {
     }}>
         <Container>
             <Navbar.Brand>
-                <Link to={APP_NAME + "/"} className='navbar-brand fw-bold text-warning'
+                <Link to="/" className='navbar-brand fw-bold text-warning'
                 style={{
                     fontSize: '100'
                 }}>
