@@ -1,17 +1,16 @@
 import React from 'react'
-import  { Link, NavLink } from "react-router-dom"
+import  { Link } from "react-router-dom"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Nav, Navbar } from 'react-bootstrap'
 
-const Link = ({ name, link }: any) => {
-    return <div className="menu">
-      <a href={link}>{name}</a>
-    </div>
-  }
-
-const APP_NAME = "bester"
+const APP_NAME = "bester";
 
 const Header = () => {
+    // const aLink = ({ name, link }: any) => {
+    //     return <div className="menu">
+    //         <a href={link}>{name}</a>
+    //     </div>
+    //     }
   return (
     <Navbar expand="lg" className='fixed-top border-0  shadow-lg'
     style={{
@@ -37,11 +36,11 @@ const Header = () => {
             }}/>
             <Navbar.Collapse id='basic-navbar-nav'>
             <Nav className='me-auto justify-content-end w-100 '>
-                <Link name="home" className='navigation-link text-black bg-transparent fw-bold' link={'/' + APP_NAME } />
-                <Link name="gallery" className='navigation-link text-black bg-transparent fw-bold' link={'/' + APP_NAME + '/gallery'} />
-                <Link name="events" className='navigation-link text-black bg-transparent fw-bold' link={'/' + APP_NAME + '/events'} />
-                <Link name="shinkan" className='navigation-link text-black bg-transparent fw-bold' link={'/' + APP_NAME + 'shinkan'} />
-                <Link name="contacts" className='navigation-link text-black bg-transparent fw-bold' link={'/' + APP_NAME + 'contacts'} />
+                <Link className='navigation-link text-black bg-transparent fw-bold' to={'/' + APP_NAME } > home </Link>
+                <Link className='navigation-link text-black bg-transparent fw-bold' to={'/' + APP_NAME + '/gallery' }> gallery </Link>
+                <Link className='navigation-link text-black bg-transparent fw-bold' to={'/' + APP_NAME + '/events'}> events </Link>
+                <Link className='navigation-link text-black bg-transparent fw-bold' to={'/' + APP_NAME + '/shinkan'}> shinkan </Link>
+                <Link className='navigation-link text-black bg-transparent fw-bold' to={'/' + APP_NAME + '/contacts'}> contacts </Link>
             </Nav>
             </Navbar.Collapse>
         </Container>
