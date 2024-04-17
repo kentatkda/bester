@@ -1,8 +1,8 @@
 import React from 'react'
-import  {Link} from "react-router-dom"
+import  { Link, NavLink } from "react-router-dom"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Nav, Navbar } from 'react-bootstrap'
-const APP_NAME: String = "bester";
+
 
 const Header = () => {
   return (
