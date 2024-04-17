@@ -12,6 +12,7 @@ import Gallery from './pages/Gallery.tsx';
 import { useEffect } from 'react';
 import './style.css';
 import { AnimatePresence } from 'framer-motion';
+const APP_NAME: String = "bester";
 
 const ScrollToTop = () => {
   const { pathname } = useLocation()
@@ -35,10 +36,10 @@ const App = () => {
         <ScrollToTop/>
         <Routes location={ location } key={location.pathname}>
           <Route path='/' element={ <Home /> }/>
-          <Route path="/events" element={ <Events /> } />
-          <Route path= "/contacts" element={ <Contact /> } />
-          <Route path= "/gallery" element={ <Gallery /> } />
-          <Route path="/shinkan" element={ <Shinkan /> } />
+          <Route path={APP_NAME + "/events"} element={ <Events /> } />
+          <Route path={APP_NAME + "/contacts"} element={ <Contact /> } />
+          <Route path={APP_NAME + "/gallery"} element={ <Gallery /> } />
+          <Route path={APP_NAME + "/shinkan"} element={ <Shinkan /> } />
         </Routes>
       </AnimatePresence>
     </div>
