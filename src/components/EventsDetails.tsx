@@ -113,7 +113,8 @@ function EventsDetails() {
                     <b style={{
                         borderBottom: 'solid',
                         // borderBottomColor: 'rgba(255, 187, 0, 0.8)',
-                        borderBottomWidth: '3px'
+                        borderBottomWidth: '3px',
+                        marginTop: '40px'
                     }}>{item.title}</b>
                     <div className='py-2 px-1 text-center' style={{
                         justifyContent: 'center',

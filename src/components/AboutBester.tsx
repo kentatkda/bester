@@ -18,13 +18,12 @@ function AboutBester() {
       margin:'auto',
       marginTop: '50vh'
     }}>
-      <p className='justify-content-space-between text-align'
+      <h2 className='justify-content-space-between text-align'
       style={{
         marginBottom: '100px',
-        fontSize: '2.4rem',
         textAlign: 'center',
         color: 'black'
-      }}> <b>ABOUT BESTER</b></p>
+      }}> <b>ABOUT BESTER</b></h2>
       <div className='container justify-content-space-between text-align-center'
         style={{
           marginBottom: '10vh',
