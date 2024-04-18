@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/bester/static/css/main.9cf4c9f6.css",
-    "main.js": "/bester/static/js/main.7799d29d.js",
+    "main.js": "/bester/static/js/main.56236c1e.js",
     "static/media/insta_logo.png": "/bester/static/media/insta_logo.469cb83ec463191dffdf.png",
     "static/media/ShinkanIchinenImg.jpg": "/bester/static/media/ShinkanIchinenImg.8fab156f5b44fd55d334.jpg",
     "static/media/tennis3.JPG": "/bester/static/media/tennis3.5c9494606ad2c534da10.JPG",
@@ -42,6 +42,7 @@
     "static/media/hanabi3.jpg": "/bester/static/media/hanabi3.36fb85ffc1d558d67144.jpg",
     "static/media/sleep.jpg": "/bester/static/media/sleep.2a09ab488c55a901dfb2.jpg",
     "static/media/gassyuku.jpg": "/bester/static/media/gassyuku.b9984cad4b68ca896729.jpg",
+    "static/media/may-calendar.jpg": "/bester/static/media/may-calendar.cb5de8db32b90beb60f8.jpg",
     "static/media/natuga.jpg": "/bester/static/media/natuga.1a22f064e17003ec0b41.jpg",
     "static/media/yui.jpg": "/bester/static/media/yui.20f02a02ab7b0fa50fba.jpg",
     "static/media/kotomi.jpg": "/bester/static/media/kotomi.cdfa955efe41c1e6e045.jpg",
@@ -54,10 +55,10 @@
     "static/media/danjyo.png": "/bester/static/media/danjyo.3788807e2224d67d43fe.png",
     "index.html": "/bester/index.html",
     "main.9cf4c9f6.css.map": "/bester/static/css/main.9cf4c9f6.css.map",
-    "main.7799d29d.js.map": "/bester/static/js/main.7799d29d.js.map"
+    "main.56236c1e.js.map": "/bester/static/js/main.56236c1e.js.map"
   },
   "entrypoints": [
     "static/css/main.9cf4c9f6.css",
-    "static/js/main.7799d29d.js"
+    "static/js/main.56236c1e.js"
   ]
 }
