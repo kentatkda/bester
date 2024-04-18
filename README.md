@@ -1,10 +1,15 @@
-## 東大/日本女子/お茶の水女子大学のインカレテニスサークル
+## 東大BESTER新歓
+
+東大/日本女子/お茶の水女子大学のインカレテニスサークル。
+Open [https://kentatkda.github.io/bester/] to view it in your browser.
+
 
 ## To be changed anually
+The files below are to be altered anually.
 
-- calendar img
-- insta link
-- X link
+- calendar images [./src/images/home/AprilCalendar.png] [./src/images/home/MayCalendar.png]
+- instagram link [https://www.instagram.com/bester_2024]
+- X link [https://twitter.com/Bester_2024]
 
 ### `npm start`
 
