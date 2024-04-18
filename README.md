@@ -1,6 +1,6 @@
 ## 東大BESTER新歓
 
-東大/日本女子/お茶の水女子大学のインカレテニスサークル。
+東大/日本女子/お茶の水女子大学のインカレテニスサークルBESTER。
 Open [https://kentatkda.github.io/bester/] to view it in your browser.
 
 
