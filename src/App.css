@@ -31,11 +31,6 @@
 }
 
 
-.social li img {
-  display: inline-block;
-  margin-right: 20px;
-  transition: 0.4s;
-}
 
 .social li img:hover {
   transform: translateY(-15px);
@@ -61,9 +56,15 @@
   .social {
     position: fixed;
     bottom: 10px;
-    left: 10px;
+    left: 5px;
     display: flex;
     z-index: 2;
+  }
+
+  .social li img {
+    display: inline-block;
+    margin-right: 10px;
+    transition: 0.4s;
   }
 }
 
@@ -78,6 +79,12 @@
     left: 40px;
     display: flex;
     z-index: 2;
+  }
+
+  .social li img {
+    display: inline-block;
+    margin-right: 20px;
+    transition: 0.4s;
   }
 }
 
