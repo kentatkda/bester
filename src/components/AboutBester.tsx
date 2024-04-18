@@ -43,7 +43,7 @@ function AboutBester() {
           <div className='col-lg-5 my-3 d-flex flex-column align-items-center justify-content-center mb-2 '
           style={{
             margin: 'auto',
-            // maxWidth: '90%',
+            maxWidth: '450px',
             textAlign: 'center',
             marginTop: '20px',
           }}>

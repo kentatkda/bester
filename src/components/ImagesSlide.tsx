@@ -12,13 +12,9 @@ function ImagesSlide() {
     <Carousel className='container'>
       <Carousel.Item>
         <img className='img-fluid border border-4 border-dark' src={BBQImg} alt="" style={{maxHeight: '300px', objectFit: 'cover'}}/>
-        
       </Carousel.Item>
       <Carousel.Item>
         <img className='img-fluid border border-4 border-dark' src={HanabiImg} alt="" style={{maxHeight: '300px', objectFit: 'cover'}}/>
-        {/* <Carousel.Caption>
-          <h3> 花火大会 </h3>
-        </Carousel.Caption> */}
       </Carousel.Item>
       <Carousel.Item>
         <img className='img-fluid border border-4 border-dark' src={ChristmasImg} alt="" style={{maxHeight: '300px', objectFit: 'cover'}} />

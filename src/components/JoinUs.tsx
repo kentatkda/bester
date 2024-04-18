@@ -1,6 +1,6 @@
 import React from 'react'
 // @ts-expect-error TS(2307): Cannot find module './images/home/Calendar.jpg' or... Remove this comment to see the full error message
-import Calendar from './images/home/Calendar.jpg'
+import Calendar from './Calendar.tsx'
 import Button from 'react-bootstrap/Button';
 import { Link } from 'react-router-dom';
 import ModalComponent from './ModalComponent.tsx';
@@ -48,9 +48,7 @@ function JoinUs() {
                     margin: 'auto'
                 }}>
                     <div className='col-lg-6 d-flex justify-content-center'>
-                        <div className='d-flex justify-content-center'>
-                            <img className='img-fluid border border-3 border-dark' src={Calendar} alt="" style={{maxHeight: '300px', objectFit: 'cover'}}/>
-                        </div>
+                        <Calendar/>
                     </div>
                     <div className='col-lg-5 d-flex flex-column align-items-center justify-content-center mb-5 mb-lg-2'
                     style={{
