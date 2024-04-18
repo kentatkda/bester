@@ -36,11 +36,11 @@ const Header = () => {
             }}/>
             <Navbar.Collapse id='basic-navbar-nav'>
             <Nav className='me-auto justify-content-end w-100 '>
-                <Link className='navigation-link text-black bg-transparent fw-bold' to={'/' + APP_NAME } > home </Link>
-                <Link className='navigation-link text-black bg-transparent fw-bold' to={'/' + APP_NAME + '/gallery' }> gallery </Link>
-                <Link className='navigation-link text-black bg-transparent fw-bold' to={'/' + APP_NAME + '/events'}> events </Link>
-                <Link className='navigation-link text-black bg-transparent fw-bold' to={'/' + APP_NAME + '/shinkan'}> shinkan </Link>
-                <Link className='navigation-link text-black bg-transparent fw-bold' to={'/' + APP_NAME + '/contacts'}> contacts </Link>
+                <Link className='navigation-link text-black bg-transparent fw-bold mx-2 my-2' to={'/' + APP_NAME } style={{textDecoration:'none'}}> home </Link>
+                <Link className='navigation-link text-black bg-transparent fw-bold mx-2 my-2' to={'/' + APP_NAME + '/gallery' } style={{textDecoration:'none'}}> gallery </Link>
+                <Link className='navigation-link text-black bg-transparent fw-bold mx-2 my-2' to={'/' + APP_NAME + '/events'} style={{textDecoration:'none'}}> events </Link>
+                <Link className='navigation-link text-black bg-transparent fw-bold mx-2 my-2' to={'/' + APP_NAME + '/shinkan'} style={{textDecoration:'none'}}> shinkan </Link>
+                <Link className='navigation-link text-black bg-transparent fw-bold mx-2 my-2' to={'/' + APP_NAME + '/contacts'} style={{textDecoration:'none'}}> contacts </Link>
             </Nav>
             </Navbar.Collapse>
         </Container>
