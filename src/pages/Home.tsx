@@ -45,7 +45,6 @@ function HomeComponent() {
         <Header/>
         <Social/>
         <PageCover/>
-        </motion.div>
         <motion.div
         variants={ContainerVariants()}
         initial="hidden"
@@ -95,6 +94,7 @@ function HomeComponent() {
         whileInView="visible">
           <Footer/>
         </motion.div>
+      </motion.div>
     </div>
   )
 }
