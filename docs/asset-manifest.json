@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/bester/static/css/main.9cf4c9f6.css",
+    "main.css": "/bester/static/css/main.9a58da50.css",
     "main.js": "/bester/static/js/main.56236c1e.js",
     "static/media/insta_logo.png": "/bester/static/media/insta_logo.469cb83ec463191dffdf.png",
     "static/media/ShinkanIchinenImg.jpg": "/bester/static/media/ShinkanIchinenImg.8fab156f5b44fd55d334.jpg",
@@ -54,11 +54,11 @@
     "static/media/BackImg.jpg": "/bester/static/media/BackImg.2ac985da4088b65d4301.jpg",
     "static/media/danjyo.png": "/bester/static/media/danjyo.3788807e2224d67d43fe.png",
     "index.html": "/bester/index.html",
-    "main.9cf4c9f6.css.map": "/bester/static/css/main.9cf4c9f6.css.map",
+    "main.9a58da50.css.map": "/bester/static/css/main.9a58da50.css.map",
     "main.56236c1e.js.map": "/bester/static/js/main.56236c1e.js.map"
   },
   "entrypoints": [
-    "static/css/main.9cf4c9f6.css",
+    "static/css/main.9a58da50.css",
     "static/js/main.56236c1e.js"
   ]
 }
