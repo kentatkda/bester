@@ -3,7 +3,7 @@
 - calendar img
 - insta link
 - X link
-- 
+
 ### `npm start`
 
 Runs the app in the development mode.\
