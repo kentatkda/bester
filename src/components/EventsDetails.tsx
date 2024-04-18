@@ -109,17 +109,21 @@ function EventsDetails() {
 
                     }}/>
                 </div>
-                <div className='col-lg-6 d-flex flex-column align-items-center justify-content-center mb-5 mb-lg-2'>
+                <div className='col-lg-6 d-flex flex-column align-items-center justify-content-center ' style={{
+                    justifyContent: 'center',
+                    alignContent: 'center',
+                    margin: 'auto',
+                }}>
                     <b style={{
                         borderBottom: 'solid',
-                        // borderBottomColor: 'rgba(255, 187, 0, 0.8)',
                         borderBottomWidth: '3px',
-                        marginTop: '40px'
-                    }}>{item.title}</b>
-                    <div className='py-2 px-1 text-center' style={{
+                        marginTop: '10px'
+                        }}>{item.title}</b>
+                    <div className='py-1 px-1 text-center' style={{
                         justifyContent: 'center',
                         alignContent: 'center',
-                        margin: 'auto'
+                        margin: 'auto',
+                        marginTop: '10px'
                     }}>
                     {item.desc}
                     </div>
