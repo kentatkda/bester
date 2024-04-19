@@ -1,6 +1,7 @@
 import React from 'react'
 // @ts-expect-error TS(2307): Cannot find module './images/home/BackImg.jpg' or ... Remove this comment to see the full error message
-import BackImg from './images/home/BackImg.jpg'
+// import BackImg from './images/home/BackImg.jpg'
+import SkyImg from './images/home/sky.jpg'
 import './PageCover.css'
 
 const PageCoverText = () => {
@@ -34,14 +35,13 @@ function ShowBackImg() {
         zIndex: '-100',
     }}
     >
-        <img className='img' src={BackImg} alt="" style=
+        <img className='img' src={SkyImg} alt="" style=
         {{
             width: '100%',
             height: '100vh',
             objectFit: 'cover',
             zIndex: '-10'
         }}/>
-        {console.log(process.env.PUBLIC_URL)}
     </div>
     )
 }
