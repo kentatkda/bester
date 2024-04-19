@@ -64,6 +64,7 @@ function ModalComponent({ fontSize }) {
             margin: 'auto',
             alignContent: 'center',
             marginBottom: '25px',
+            maxWidth: '90%'
             }}>
               <h4 className='text-dark text-center fw-bold px-0 mx-0 my-3' style={{
                 fontSize: '20px',

@@ -2,7 +2,7 @@ import React from 'react'
 // @ts-expect-error TS(2307): Cannot find module './images/symbol/insta_logo.png'... Remove this comment to see the full error message
 import  InstagramImage from './images/symbol/insta_logo.png'
 // @ts-expect-error TS(2307): Cannot find module './images/symbol/x_logo.png' o... Remove this comment to see the full error message
-import XImage from './images/symbol/logo-white.png'
+import XImage from './images/symbol/x_logo_white.png'
 function Social() {
 
 

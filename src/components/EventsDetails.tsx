@@ -134,7 +134,7 @@ function EventsDetails() {
         )
     return (
         <div>
-            <div className='container py-5 justify-content-center'
+            <div className='py-5 justify-content-center'
             style={{
                 marginTop: '150px'
             }}>

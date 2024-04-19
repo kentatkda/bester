@@ -1,9 +1,9 @@
 import React from 'react'
 import Carousel from 'react-bootstrap/Carousel';
 // @ts-expect-error TS(2307): Cannot find module './images/events/christmasparty... Remove this comment to see the full error message
-import AprilImg from './images/home/Calendar.jpg'
+import AprilImg from './images/home/AprilCalendar.jpg'
 // @ts-expect-error TS(2307): Cannot find module './images/events/hanabi.jpg' or... Remove this comment to see the full error message
-import MayImg from './images/home/may-calendar.jpg'
+import MayImg from './images/home/MayCalendar.jpg'
 
 
 export default function Calendar() {

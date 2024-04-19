@@ -7,7 +7,7 @@ function ShowLogo() {
     style={{
         position: 'fixed',
         margin: 'auto',
-        marginTop: '45vh',
+        marginTop: '40vh',
         textAlign: 'center',
         width: '100%',
         height: '100px',

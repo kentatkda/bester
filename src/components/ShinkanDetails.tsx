@@ -8,7 +8,7 @@ import GassyukuImg from './images/shinkan/ShinkanGassyukuImg.JPG'
 // @ts-expect-error TS(2307): Cannot find module './images/shinkan/ShinkanIchine... Remove this comment to see the full error message
 import IchinenImg from './images/shinkan/ShinkanIchinenImg.jpg'
 // @ts-expect-error TS(2307): Cannot find module './images/home/Calendar.jpg' or... Remove this comment to see the full error message
-import Calendar from './images/home/Calendar.jpg'
+import Calendar from './images/home/AprilCalendar.jpg'
 // @ts-expect-error TS(6142): Module './ShinkanJoinButton.tsx' was resolved to 'C... Remove this comment to see the full error message
 import ModalComponent from './ModalComponent.tsx'
 import { motion } from 'framer-motion';
@@ -42,7 +42,8 @@ function ShinkanDescription () {
       key={item.title}>
       <div className='container justify-content-space-between text-align-center shadow'
       style={{
-        width: '80%',
+        // width: '80%',
+        maxWidth: "90%",
         marginBottom: '10vh',
         borderRadius: '10px', // 任意の角の半径を指定します
         backgroundColor: '#f0f0f0', // 任意の背景色を指定します
@@ -50,10 +51,11 @@ function ShinkanDescription () {
       }}>
           <div className='row'>
               <div className='col-lg-6 d-flex justify-content-center'>
-                  <img src={item.src} className='img-fluid border border-3 border-warning' alt="" style={{
-                      height:'80%',
+                  <img src={item.src} className='img-fluid my-3 border border-3 border-warning' alt="" style={{
+                      maxWidth:'300px',
                       margin:'auto',
                       justifyContent:'center',
+                      
 
                   }}/>
               </div>
@@ -61,7 +63,7 @@ function ShinkanDescription () {
                   <b style={{marginTop: '30px'}}>{item.title}</b>
                   <div className='py-2 px-1' style={{
                     textAlign: 'center',
-                    width: '90%'
+                    maxWidth:'400px'
                   }}>
                     {item.desc}
                   </div>
