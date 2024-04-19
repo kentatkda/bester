@@ -55,8 +55,7 @@ function ShinkanDescription () {
                       maxWidth:'300px',
                       margin:'auto',
                       justifyContent:'center',
-                      
-
+                      maxHeight: '90%'
                   }}/>
               </div>
               <div className='col-lg-6 d-flex flex-column align-items-center justify-content-center mb-5 mb-lg-2'>
